@@ -1,0 +1,1957 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CrmNotificationManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CrmNotificationManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.CrmNotificationManager">
+  
+  
+  <h1 id="BLL_Falcon_CrmNotificationManager" data-uid="BLL.Falcon.CrmNotificationManager" class="text-break">Class CrmNotificationManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CrmNotificationManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BLL.Falcon.I.ICrmNotificationManager.html">ICrmNotificationManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.html">BLL.Falcon</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_CrmNotificationManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CrmNotificationManager : ICrmNotificationManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager__ctor_" data-uid="BLL.Falcon.CrmNotificationManager.#ctor*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager__ctor_BLL_IRepository_BLL_IManager_BLL_Core_I_IDebug_" data-uid="BLL.Falcon.CrmNotificationManager.#ctor(BLL.IRepository,BLL.IManager,BLL.Core.I.IDebug)">CrmNotificationManager(IRepository, IManager, IDebug)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrmNotificationManager(IRepository db, IManager mng, IDebug debug)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.IRepository.html">IRepository</a></td>
+        <td><span class="parametername">db</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.IManager.html">IManager</a></td>
+        <td><span class="parametername">mng</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Core.I.IDebug.html">IDebug</a></td>
+        <td><span class="parametername">debug</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BLL_Falcon_CrmNotificationManager_db" data-uid="BLL.Falcon.CrmNotificationManager.db">db</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRepository db</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.IRepository.html">IRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BLL_Falcon_CrmNotificationManager_Debug" data-uid="BLL.Falcon.CrmNotificationManager.Debug">Debug</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDebug Debug</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Core.I.IDebug.html">IDebug</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BLL_Falcon_CrmNotificationManager_mng" data-uid="BLL.Falcon.CrmNotificationManager.mng">mng</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IManager mng</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.IManager.html">IManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_CreateMeetTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.CreateMeetTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_CreateMeetTrigger_BLL_aib_mt_meetNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.CreateMeetTrigger(BLL.aib_mt_meetNotifications)">CreateMeetTrigger(aib_mt_meetNotifications)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateMeetTrigger(aib_mt_meetNotifications notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_mt_meetNotifications.html">aib_mt_meetNotifications</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_CreateOverdueDealTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.CreateOverdueDealTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_CreateOverdueDealTrigger_BLL_aib_deals_" data-uid="BLL.Falcon.CrmNotificationManager.CreateOverdueDealTrigger(BLL.aib_deals)">CreateOverdueDealTrigger(aib_deals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateOverdueDealTrigger(aib_deals deal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_CreateOverdueTasksTriggers_" data-uid="BLL.Falcon.CrmNotificationManager.CreateOverdueTasksTriggers*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_CreateOverdueTasksTriggers_System_Collections_Generic_List_BLL_aib_tsk_tasks__" data-uid="BLL.Falcon.CrmNotificationManager.CreateOverdueTasksTriggers(System.Collections.Generic.List{BLL.aib_tsk_tasks})">CreateOverdueTasksTriggers(List&lt;aib_tsk_tasks&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateOverdueTasksTriggers(List&lt;aib_tsk_tasks&gt; tasks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_tsk_tasks.html">aib_tsk_tasks</a>&gt;</td>
+        <td><span class="parametername">tasks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_CreateOverdueTaskTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.CreateOverdueTaskTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_CreateOverdueTaskTrigger_BLL_aib_tsk_tasks_" data-uid="BLL.Falcon.CrmNotificationManager.CreateOverdueTaskTrigger(BLL.aib_tsk_tasks)">CreateOverdueTaskTrigger(aib_tsk_tasks)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateOverdueTaskTrigger(aib_tsk_tasks task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_tsk_tasks.html">aib_tsk_tasks</a></td>
+        <td><span class="parametername">task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_CreateTaskTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.CreateTaskTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_CreateTaskTrigger_BLL_aib_tsk_taskNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.CreateTaskTrigger(BLL.aib_tsk_taskNotifications)">CreateTaskTrigger(aib_tsk_taskNotifications)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; CreateTaskTrigger(aib_tsk_taskNotifications notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_tsk_taskNotifications.html">aib_tsk_taskNotifications</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_DeleteMeetTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteMeetTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_DeleteMeetTrigger_System_String_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteMeetTrigger(System.String)">DeleteMeetTrigger(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteMeetTrigger(string triggerName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">triggerName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_DeleteNotifiedItemLog_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteNotifiedItemLog*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_DeleteNotifiedItemLog_BLL_as_users_System_Int32_System_String_System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteNotifiedItemLog(BLL.as_users,System.Int32,System.String,System.Boolean)">DeleteNotifiedItemLog(as_users, Int32, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteNotifiedItemLog(as_users user, int itemID, string notificationCode, bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">notificationCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_DeleteOverdueDealTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteOverdueDealTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_DeleteOverdueDealTrigger_System_Int32_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteOverdueDealTrigger(System.Int32)">DeleteOverdueDealTrigger(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteOverdueDealTrigger(int dealID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dealID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_DeleteOverdueTaskTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteOverdueTaskTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_DeleteOverdueTaskTrigger_System_Int32_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteOverdueTaskTrigger(System.Int32)">DeleteOverdueTaskTrigger(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteOverdueTaskTrigger(int taskID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">taskID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_DeleteTaskTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteTaskTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_DeleteTaskTrigger_System_String_" data-uid="BLL.Falcon.CrmNotificationManager.DeleteTaskTrigger(System.String)">DeleteTaskTrigger(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteTaskTrigger(string triggerName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">triggerName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_Dispose_" data-uid="BLL.Falcon.CrmNotificationManager.Dispose*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_Dispose" data-uid="BLL.Falcon.CrmNotificationManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_Dispose_" data-uid="BLL.Falcon.CrmNotificationManager.Dispose*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_Dispose_System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_GetUserCRMNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.GetUserCRMNotifications*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_GetUserCRMNotifications_BLL_as_users_" data-uid="BLL.Falcon.CrmNotificationManager.GetUserCRMNotifications(BLL.as_users)">GetUserCRMNotifications(as_users)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrmNotificationViewModel GetUserCRMNotifications(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Notifications.CrmNotifications.CrmNotificationViewModel.html">CrmNotificationViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_GetUserCRMNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.GetUserCRMNotifications*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_GetUserCRMNotifications_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.CrmNotificationManager.GetUserCRMNotifications(System.Int32,BLL.as_users)">GetUserCRMNotifications(Int32, as_users)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrmNotificationViewModel GetUserCRMNotifications(int userID, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Notifications.CrmNotifications.CrmNotificationViewModel.html">CrmNotificationViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_GetWeekReportUsers_" data-uid="BLL.Falcon.CrmNotificationManager.GetWeekReportUsers*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_GetWeekReportUsers" data-uid="BLL.Falcon.CrmNotificationManager.GetWeekReportUsers">GetWeekReportUsers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UsersInCrm&gt; GetWeekReportUsers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Notifications.UsersInCrm.html">UsersInCrm</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_IsInTimeRange_" data-uid="BLL.Falcon.CrmNotificationManager.IsInTimeRange*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_IsInTimeRange_BLL_aib_crm_nt_us_userNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.IsInTimeRange(BLL.aib_crm_nt_us_userNotifications)">IsInTimeRange(aib_crm_nt_us_userNotifications)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInTimeRange(aib_crm_nt_us_userNotifications userNotification)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_nt_us_userNotifications.html">aib_crm_nt_us_userNotifications</a></td>
+        <td><span class="parametername">userNotification</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_RecreateMeetTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateMeetTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_RecreateMeetTrigger_BLL_aib_mt_meetNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateMeetTrigger(BLL.aib_mt_meetNotifications)">RecreateMeetTrigger(aib_mt_meetNotifications)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RecreateMeetTrigger(aib_mt_meetNotifications notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_mt_meetNotifications.html">aib_mt_meetNotifications</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_RecreateOverdueDealTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateOverdueDealTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_RecreateOverdueDealTrigger_BLL_aib_deals_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateOverdueDealTrigger(BLL.aib_deals)">RecreateOverdueDealTrigger(aib_deals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RecreateOverdueDealTrigger(aib_deals deal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_RecreateOverdueTaskTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateOverdueTaskTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_RecreateOverdueTaskTrigger_BLL_aib_tsk_tasks_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateOverdueTaskTrigger(BLL.aib_tsk_tasks)">RecreateOverdueTaskTrigger(aib_tsk_tasks)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RecreateOverdueTaskTrigger(aib_tsk_tasks task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_tsk_tasks.html">aib_tsk_tasks</a></td>
+        <td><span class="parametername">task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_RecreateTaskTrigger_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateTaskTrigger*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_RecreateTaskTrigger_BLL_aib_tsk_taskNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.RecreateTaskTrigger(BLL.aib_tsk_taskNotifications)">RecreateTaskTrigger(aib_tsk_taskNotifications)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RecreateTaskTrigger(aib_tsk_taskNotifications notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_tsk_taskNotifications.html">aib_tsk_taskNotifications</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_RunNotificationExecutor_" data-uid="BLL.Falcon.CrmNotificationManager.RunNotificationExecutor*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_RunNotificationExecutor" data-uid="BLL.Falcon.CrmNotificationManager.RunNotificationExecutor">RunNotificationExecutor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunNotificationExecutor()</code></pre>
+  </div>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SaveUserCrmNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.SaveUserCrmNotifications*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SaveUserCrmNotifications_BLL_as_users_System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SaveUserCrmNotifications(BLL.as_users,System.Boolean)">SaveUserCrmNotifications(as_users, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveUserCrmNotifications(as_users user, bool isCrmNotificationsEnabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isCrmNotificationsEnabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SaveUserCrmNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.SaveUserCrmNotifications*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SaveUserCrmNotifications_BLL_as_users_System_Collections_Generic_List_BLL_Models_Notifications_CrmNotifications_CrmNotificationSaveModel__System_Collections_Generic_List_BLL_Models_Notifications_CrmNotifications_UserNotificationRestrictionModel__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SaveUserCrmNotifications(BLL.as_users,System.Collections.Generic.List{BLL.Models.Notifications.CrmNotifications.CrmNotificationSaveModel},System.Collections.Generic.List{BLL.Models.Notifications.CrmNotifications.UserNotificationRestrictionModel},System.Boolean)">SaveUserCrmNotifications(as_users, List&lt;CrmNotificationSaveModel&gt;, List&lt;UserNotificationRestrictionModel&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveUserCrmNotifications(as_users user, List&lt;CrmNotificationSaveModel&gt; crmNotifications, List&lt;UserNotificationRestrictionModel&gt; userNotificationRestrictions, bool isSendWeekReport)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Notifications.CrmNotifications.CrmNotificationSaveModel.html">CrmNotificationSaveModel</a>&gt;</td>
+        <td><span class="parametername">crmNotifications</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Notifications.CrmNotifications.UserNotificationRestrictionModel.html">UserNotificationRestrictionModel</a>&gt;</td>
+        <td><span class="parametername">userNotificationRestrictions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSendWeekReport</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SaveUserCrmNotifications_" data-uid="BLL.Falcon.CrmNotificationManager.SaveUserCrmNotifications*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SaveUserCrmNotifications_System_Int32_System_Collections_Generic_List_BLL_Models_Notifications_CrmNotifications_CrmNotificationSaveModel__System_Collections_Generic_List_BLL_Models_Notifications_CrmNotifications_UserNotificationRestrictionModel__System_Boolean_BLL_as_users_" data-uid="BLL.Falcon.CrmNotificationManager.SaveUserCrmNotifications(System.Int32,System.Collections.Generic.List{BLL.Models.Notifications.CrmNotifications.CrmNotificationSaveModel},System.Collections.Generic.List{BLL.Models.Notifications.CrmNotifications.UserNotificationRestrictionModel},System.Boolean,BLL.as_users)">SaveUserCrmNotifications(Int32, List&lt;CrmNotificationSaveModel&gt;, List&lt;UserNotificationRestrictionModel&gt;, Boolean, as_users)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveUserCrmNotifications(int userID, List&lt;CrmNotificationSaveModel&gt; crmNotifications, List&lt;UserNotificationRestrictionModel&gt; userNotificationRestrictions, bool isSendWeekReport, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Notifications.CrmNotifications.CrmNotificationSaveModel.html">CrmNotificationSaveModel</a>&gt;</td>
+        <td><span class="parametername">crmNotifications</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Notifications.CrmNotifications.UserNotificationRestrictionModel.html">UserNotificationRestrictionModel</a>&gt;</td>
+        <td><span class="parametername">userNotificationRestrictions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSendWeekReport</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_ScheduleWeeklyReport_" data-uid="BLL.Falcon.CrmNotificationManager.ScheduleWeeklyReport*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_ScheduleWeeklyReport" data-uid="BLL.Falcon.CrmNotificationManager.ScheduleWeeklyReport">ScheduleWeeklyReport()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScheduleWeeklyReport()</code></pre>
+  </div>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendCallNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendCallNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendCallNotification_System_String_System_Nullable_System_Int32__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SendCallNotification(System.String,System.Nullable{System.Int32},System.Boolean)">SendCallNotification(String, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendCallNotification(string timeTypeCode, int? callID = default(int? ), bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">callID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendChangeStatusesInProductionsNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendChangeStatusesInProductionsNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendChangeStatusesInProductionsNotification_System_String_System_Nullable_System_Int32__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SendChangeStatusesInProductionsNotification(System.String,System.Nullable{System.Int32},System.Boolean)">SendChangeStatusesInProductionsNotification(String, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendChangeStatusesInProductionsNotification(string timeTypeCode, int? stageID = default(int? ), bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">stageID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendCombinedReport_" data-uid="BLL.Falcon.CrmNotificationManager.SendCombinedReport*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendCombinedReport" data-uid="BLL.Falcon.CrmNotificationManager.SendCombinedReport">SendCombinedReport()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendCombinedReport()</code></pre>
+  </div>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendDealWinLostNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendDealWinLostNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendDealWinLostNotification_System_String_System_Nullable_System_Int32__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SendDealWinLostNotification(System.String,System.Nullable{System.Int32},System.Boolean)">SendDealWinLostNotification(String, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendDealWinLostNotification(string timeTypeCode, int? dealID = default(int? ), bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">dealID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendDealWithoutTaskNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendDealWithoutTaskNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendDealWithoutTaskNotification_System_String_System_Nullable_System_Int32__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SendDealWithoutTaskNotification(System.String,System.Nullable{System.Int32},System.Boolean)">SendDealWithoutTaskNotification(String, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendDealWithoutTaskNotification(string timeTypeCode, int? dealID = default(int? ), bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">dealID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendMadeProductionNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendMadeProductionNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendMadeProductionNotification_System_String_System_Nullable_System_Int32__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SendMadeProductionNotification(System.String,System.Nullable{System.Int32},System.Boolean)">SendMadeProductionNotification(String, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMadeProductionNotification(string timeTypeCode, int? stageID = default(int? ), bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">stageID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendMeetChangeNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendMeetChangeNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendMeetChangeNotification_BLL_aib_mt_meets_BLL_Models_Meets_MeetChangeNotificationModel_" data-uid="BLL.Falcon.CrmNotificationManager.SendMeetChangeNotification(BLL.aib_mt_meets,BLL.Models.Meets.MeetChangeNotificationModel)">SendMeetChangeNotification(aib_mt_meets, MeetChangeNotificationModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMeetChangeNotification(aib_mt_meets meet, MeetChangeNotificationModel changesModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_mt_meets.html">aib_mt_meets</a></td>
+        <td><span class="parametername">meet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Meets.MeetChangeNotificationModel.html">MeetChangeNotificationModel</a></td>
+        <td><span class="parametername">changesModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendMeetNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendMeetNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendMeetNotification_BLL_aib_mt_meets_BLL_as_users_BLL_aib_contacts_System_String_" data-uid="BLL.Falcon.CrmNotificationManager.SendMeetNotification(BLL.aib_mt_meets,BLL.as_users,BLL.aib_contacts,System.String)">SendMeetNotification(aib_mt_meets, as_users, aib_contacts, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMeetNotification(aib_mt_meets meet, as_users responsible, aib_contacts contact, string notificationTypeCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_mt_meets.html">aib_mt_meets</a></td>
+        <td><span class="parametername">meet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">responsible</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_contacts.html">aib_contacts</a></td>
+        <td><span class="parametername">contact</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">notificationTypeCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendNewDealsNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendNewDealsNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendNewDealsNotification_System_String_System_Int32_System_Nullable_System_Int32__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SendNewDealsNotification(System.String,System.Int32,System.Nullable{System.Int32},System.Boolean)">SendNewDealsNotification(String, Int32, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendNewDealsNotification(string timeTypeCode, int crmID, int? dealID = default(int? ), bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">crmID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">dealID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendNewTasksNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendNewTasksNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendNewTasksNotification_System_String_System_Int32_System_Nullable_System_Int32__System_Boolean_" data-uid="BLL.Falcon.CrmNotificationManager.SendNewTasksNotification(System.String,System.Int32,System.Nullable{System.Int32},System.Boolean)">SendNewTasksNotification(String, Int32, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendNewTasksNotification(string timeTypeCode, int crmID, int? taskID = default(int? ), bool withNewContext = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">crmID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">taskID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNewContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendNotificationReport_" data-uid="BLL.Falcon.CrmNotificationManager.SendNotificationReport*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendNotificationReport_System_Int32_System_String_" data-uid="BLL.Falcon.CrmNotificationManager.SendNotificationReport(System.Int32,System.String)">SendNotificationReport(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendNotificationReport(int itemID, string typeCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendOverdueDealNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendOverdueDealNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendOverdueDealNotification_System_Int32_System_Int32_System_String_" data-uid="BLL.Falcon.CrmNotificationManager.SendOverdueDealNotification(System.Int32,System.Int32,System.String)">SendOverdueDealNotification(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendOverdueDealNotification(int dealID, int notificationID, string timeTypeCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dealID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">notificationID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendOverdueTaskNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendOverdueTaskNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendOverdueTaskNotification_System_Int32_System_Int32_System_String_" data-uid="BLL.Falcon.CrmNotificationManager.SendOverdueTaskNotification(System.Int32,System.Int32,System.String)">SendOverdueTaskNotification(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendOverdueTaskNotification(int taskID, int notificationID, string timeTypeCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">taskID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">notificationID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timeTypeCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_SendTaskNotification_" data-uid="BLL.Falcon.CrmNotificationManager.SendTaskNotification*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_SendTaskNotification_BLL_aib_tsk_tasks_BLL_as_users_System_String_" data-uid="BLL.Falcon.CrmNotificationManager.SendTaskNotification(BLL.aib_tsk_tasks,BLL.as_users,System.String)">SendTaskNotification(aib_tsk_tasks, as_users, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendTaskNotification(aib_tsk_tasks task, as_users responsible, string notificationTypeCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_tsk_tasks.html">aib_tsk_tasks</a></td>
+        <td><span class="parametername">task</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">responsible</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">notificationTypeCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_CrmNotificationManager_TestWeekReport_" data-uid="BLL.Falcon.CrmNotificationManager.TestWeekReport*"></a>
+  <h4 id="BLL_Falcon_CrmNotificationManager_TestWeekReport_BLL_as_users_" data-uid="BLL.Falcon.CrmNotificationManager.TestWeekReport(BLL.as_users)">TestWeekReport(as_users)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestWeekReport(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BLL.Falcon.I.ICrmNotificationManager.html">ICrmNotificationManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1029 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFinancesManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFinancesManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.IFinancesManager">
+  
+  
+  <h1 id="BLL_Falcon_I_IFinancesManager" data-uid="BLL.Falcon.I.IFinancesManager" class="text-break">Interface IFinancesManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_IFinancesManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFinancesManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_AddPayment_" data-uid="BLL.Falcon.I.IFinancesManager.AddPayment*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_AddPayment_BLL_as_users_System_String_System_Decimal_System_Int32__BLL_API_Robokassa_PaymentType_System_String__System_String_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="BLL.Falcon.I.IFinancesManager.AddPayment(BLL.as_users,System.String,System.Decimal,System.Int32@,BLL.API.Robokassa.PaymentType,System.String@,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">AddPayment(as_users, String, Decimal, out Int32, PaymentType, out String, String, Int32, Int32, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Добавить платеж в систему</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AddPayment(as_users user, string code, decimal amount, out int amountWithDiscount, PaymentType type, out string typeName, string promoCode = null, int tariffID = 0, int userCount = 0, int countMonth = 0, bool isPocessed = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>код платежа (tariff, balance, phone, rentPhone, extension)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>сумма</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amountWithDiscount</span></td>
+        <td><p>сумма со скидкой</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.API.Robokassa.PaymentType.html">PaymentType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>код типа платежа (InApp, Robokassa)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td><p>название типа платежа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">promoCode</span></td>
+        <td><p>промо-код</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tariffID</span></td>
+        <td><p>id тарифа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userCount</span></td>
+        <td><p>количество пользователей</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">countMonth</span></td>
+        <td><p>количество месяцев</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isPocessed</span></td>
+        <td><p>пометить платеж как проведенный</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_AddPaymentBroadcastMailing_" data-uid="BLL.Falcon.I.IFinancesManager.AddPaymentBroadcastMailing*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_AddPaymentBroadcastMailing_BLL_as_users_System_Int32_BLL_API_Robokassa_PaymentType_System_Decimal__System_String__System_String__System_Boolean_" data-uid="BLL.Falcon.I.IFinancesManager.AddPaymentBroadcastMailing(BLL.as_users,System.Int32,BLL.API.Robokassa.PaymentType,System.Decimal@,System.String@,System.String@,System.Boolean)">AddPaymentBroadcastMailing(as_users, Int32, PaymentType, out Decimal, out String, out String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Оплата рассылок SMS EMAIL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AddPaymentBroadcastMailing(as_users user, int broadcastPackID, PaymentType type, out decimal amount, out string description, out string error, bool isProcessed = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">broadcastPackID</span></td>
+        <td><p>id набора</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.API.Robokassa.PaymentType.html">PaymentType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>тип платежа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>размер платежа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>детали платежа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>ошибка</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isProcessed</span></td>
+        <td><p>без подтверждения</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_AddPromocodeToCrm_" data-uid="BLL.Falcon.I.IFinancesManager.AddPromocodeToCrm*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_AddPromocodeToCrm_System_String_System_Int32_" data-uid="BLL.Falcon.I.IFinancesManager.AddPromocodeToCrm(System.String,System.Int32)">AddPromocodeToCrm(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Прикрепить промокод к crm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddPromocodeToCrm(string promocode, int crmID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">promocode</span></td>
+        <td><p>код</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">crmID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_CreateInvoice_" data-uid="BLL.Falcon.I.IFinancesManager.CreateInvoice*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_CreateInvoice_BLL_as_users_System_String_System_Single_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_String__" data-uid="BLL.Falcon.I.IFinancesManager.CreateInvoice(BLL.as_users,System.String,System.Single,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String@)">CreateInvoice(as_users, String, Single, String, String, String, String, String, String, String, Int32, Int32, Int32, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Создать счет на оплату</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CreateInvoice(as_users user, string code, float sum, string coupon, string companyName, string companyYurAdress, string companyInn, string companyKpp, string companyPhone, string companyFactAdress, int tariffID, int userCount, int countMonth, int extensionID, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>код платежа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sum</span></td>
+        <td><p>сумма</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">coupon</span></td>
+        <td><p>промо код</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">companyName</span></td>
+        <td><p>название компании</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">companyYurAdress</span></td>
+        <td><p>юридический адрес</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">companyInn</span></td>
+        <td><p>ИНН</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">companyKpp</span></td>
+        <td><p>КПП</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">companyPhone</span></td>
+        <td><p>телефон</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">companyFactAdress</span></td>
+        <td><p>фактический адрес</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tariffID</span></td>
+        <td><p>подключаемый тариф</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userCount</span></td>
+        <td><p>количество пользователей</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">countMonth</span></td>
+        <td><p>на сколько месяцев</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">extensionID</span></td>
+        <td><p>расширение</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_DeleteInvoice_" data-uid="BLL.Falcon.I.IFinancesManager.DeleteInvoice*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_DeleteInvoice_BLL_as_users_System_Int32_System_String__" data-uid="BLL.Falcon.I.IFinancesManager.DeleteInvoice(BLL.as_users,System.Int32,System.String@)">DeleteInvoice(as_users, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Удалить счет</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteInvoice(as_users user, int id, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>счет</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetAmountWithDiscount_" data-uid="BLL.Falcon.I.IFinancesManager.GetAmountWithDiscount*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetAmountWithDiscount_System_Decimal_BLL_Models_Tariff_Promocode_" data-uid="BLL.Falcon.I.IFinancesManager.GetAmountWithDiscount(System.Decimal,BLL.Models.Tariff.Promocode)">GetAmountWithDiscount(Decimal, Promocode)</h4>
+  <div class="markdown level1 summary"><p>Возвращает цену с учетом скидки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">decimal GetAmountWithDiscount(decimal amount, Promocode promocodeObj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>цена</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Tariff.Promocode.html">Promocode</a></td>
+        <td><span class="parametername">promocodeObj</span></td>
+        <td><p>объект скидки</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetFinance_" data-uid="BLL.Falcon.I.IFinancesManager.GetFinance*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetFinance_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFinancesManager.GetFinance(BLL.as_users,System.Int32)">GetFinance(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить лог</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">aib_crm_finances GetFinance(as_users user, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>лог</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_finances.html">aib_crm_finances</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetFinances_" data-uid="BLL.Falcon.I.IFinancesManager.GetFinances*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetFinances_BLL_as_users_BLL_Models_Paginations_PaginationRule_" data-uid="BLL.Falcon.I.IFinancesManager.GetFinances(BLL.as_users,BLL.Models.Paginations.PaginationRule)">GetFinances(as_users, PaginationRule)</h4>
+  <div class="markdown level1 summary"><p>Получить лог финансовых операций</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PaginationResult&lt;aib_crm_finances&gt; GetFinances(as_users user, PaginationRule pagination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationRule.html">PaginationRule</a></td>
+        <td><span class="parametername">pagination</span></td>
+        <td><p>пагинация</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationResult-1.html">PaginationResult</a>&lt;<a class="xref" href="BLL.aib_crm_finances.html">aib_crm_finances</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetInvoces_" data-uid="BLL.Falcon.I.IFinancesManager.GetInvoces*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetInvoces_BLL_as_users_BLL_Models_Paginations_PaginationRule_" data-uid="BLL.Falcon.I.IFinancesManager.GetInvoces(BLL.as_users,BLL.Models.Paginations.PaginationRule)">GetInvoces(as_users, PaginationRule)</h4>
+  <div class="markdown level1 summary"><p>Получить счета на оплату</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PaginationResult&lt;aib_fin_invoices&gt; GetInvoces(as_users user, PaginationRule pagination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationRule.html">PaginationRule</a></td>
+        <td><span class="parametername">pagination</span></td>
+        <td><p>пагинация</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationResult-1.html">PaginationResult</a>&lt;<a class="xref" href="BLL.aib_fin_invoices.html">aib_fin_invoices</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetInvoice_" data-uid="BLL.Falcon.I.IFinancesManager.GetInvoice*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetInvoice_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFinancesManager.GetInvoice(BLL.as_users,System.Int32)">GetInvoice(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить счет</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InvoiceViewModel GetInvoice(as_users user, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>счет</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Finances.InvoiceViewModel.html">InvoiceViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetTariffDiscounts_" data-uid="BLL.Falcon.I.IFinancesManager.GetTariffDiscounts*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetTariffDiscounts" data-uid="BLL.Falcon.I.IFinancesManager.GetTariffDiscounts">GetTariffDiscounts()</h4>
+  <div class="markdown level1 summary"><p>Возвращает скидки по тарифам (при покупке на N месяцев)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TariffDiscountModel&gt; GetTariffDiscounts()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Tariff.TariffDiscountModel.html">TariffDiscountModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetTotalBalance_" data-uid="BLL.Falcon.I.IFinancesManager.GetTotalBalance*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetTotalBalance_BLL_as_users_" data-uid="BLL.Falcon.I.IFinancesManager.GetTotalBalance(BLL.as_users)">GetTotalBalance(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить баланс системы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">decimal GetTotalBalance(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_GetTotalFinanceInfo_" data-uid="BLL.Falcon.I.IFinancesManager.GetTotalFinanceInfo*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_GetTotalFinanceInfo_BLL_as_users_" data-uid="BLL.Falcon.I.IFinancesManager.GetTotalFinanceInfo(BLL.as_users)">GetTotalFinanceInfo(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает полную информацию о состоянии баланса пользователя</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TotalFinanceInfoModel GetTotalFinanceInfo(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>CRM пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FinancialModeling.TotalFinanceInfoModel.html">TotalFinanceInfoModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_LogRobokassaPayment_" data-uid="BLL.Falcon.I.IFinancesManager.LogRobokassaPayment*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_LogRobokassaPayment_System_String_System_String_" data-uid="BLL.Falcon.I.IFinancesManager.LogRobokassaPayment(System.String,System.String)">LogRobokassaPayment(String, String)</h4>
+  <div class="markdown level1 summary"><p>Логгирование запросов от РК</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogRobokassaPayment(string url, string ip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>url with params</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ip</span></td>
+        <td><p>ip</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_ProcessModulBankWebhook_" data-uid="BLL.Falcon.I.IFinancesManager.ProcessModulBankWebhook*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_ProcessModulBankWebhook_BLL_Models_Finances_ModulBankWebhook_" data-uid="BLL.Falcon.I.IFinancesManager.ProcessModulBankWebhook(BLL.Models.Finances.ModulBankWebhook)">ProcessModulBankWebhook(ModulBankWebhook)</h4>
+  <div class="markdown level1 summary"><p>Облработка входящего платежа Модуль банка</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ProcessModulBankWebhook(ModulBankWebhook wh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Finances.ModulBankWebhook.html">ModulBankWebhook</a></td>
+        <td><span class="parametername">wh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFinancesManager_ProcessPayment_" data-uid="BLL.Falcon.I.IFinancesManager.ProcessPayment*"></a>
+  <h4 id="BLL_Falcon_I_IFinancesManager_ProcessPayment_BLL_as_users_System_Int32_System_String__" data-uid="BLL.Falcon.I.IFinancesManager.ProcessPayment(BLL.as_users,System.Int32,System.String@)">ProcessPayment(as_users, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Обрпботать платеж</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ProcessPayment(as_users user, int id, out string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>платеж</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

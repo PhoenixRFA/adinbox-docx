@@ -1,0 +1,964 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAnalyticsManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAnalyticsManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.IAnalyticsManager">
+  
+  
+  <h1 id="BLL_Falcon_I_IAnalyticsManager" data-uid="BLL.Falcon.I.IAnalyticsManager" class="text-break">Interface IAnalyticsManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_IAnalyticsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAnalyticsManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_AddCostTable_" data-uid="BLL.Falcon.I.IAnalyticsManager.AddCostTable*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_AddCostTable_System_String_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.AddCostTable(System.String,BLL.as_users)">AddCostTable(String, as_users)</h4>
+  <div class="markdown level1 summary"><p>Создает новую таблицу расходов. Возвращает ID новой таблицы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AddCostTable(string type, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>тип таблицы</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_AddCostTableRow_" data-uid="BLL.Falcon.I.IAnalyticsManager.AddCostTableRow*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_AddCostTableRow_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.AddCostTableRow(System.Int32,BLL.as_users)">AddCostTableRow(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Добавляет новую (пустую) запись в таблицу расходов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AddCostTableRow(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id таблицы</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_ChangeProfitCalculation_" data-uid="BLL.Falcon.I.IAnalyticsManager.ChangeProfitCalculation*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_ChangeProfitCalculation_System_Boolean_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.ChangeProfitCalculation(System.Boolean,BLL.as_users)">ChangeProfitCalculation(Boolean, as_users)</h4>
+  <div class="markdown level1 summary"><p>Изменение состояния переключателя Рассчитывать процент менеджера от маржи</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeProfitCalculation(bool state, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>Стостояние - вкл/выкл</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_DeleteCostTable_" data-uid="BLL.Falcon.I.IAnalyticsManager.DeleteCostTable*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_DeleteCostTable_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.DeleteCostTable(System.Int32,BLL.as_users)">DeleteCostTable(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удаляет таблицу расходов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteCostTable(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id таблицы</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_DeleteCostTableRow_" data-uid="BLL.Falcon.I.IAnalyticsManager.DeleteCostTableRow*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_DeleteCostTableRow_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.DeleteCostTableRow(System.Int32,BLL.as_users)">DeleteCostTableRow(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удаляет строку из таблицы расходов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteCostTableRow(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id строки</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_ExportManagerResults_" data-uid="BLL.Falcon.I.IAnalyticsManager.ExportManagerResults*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_ExportManagerResults_System_Int32_System_Int32_System_DateTime_System_DateTime_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.ExportManagerResults(System.Int32,System.Int32,System.DateTime,System.DateTime,BLL.as_users)">ExportManagerResults(Int32, Int32, DateTime, DateTime, as_users)</h4>
+  <div class="markdown level1 summary"><p>Экспорт результатов менеджера в csv</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ExportManagerResults(int funnelID, int managerID, DateTime from, DateTime to, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td><p>id воронки</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">managerID</span></td>
+        <td><p>id менеджера</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>дата с</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>дата по</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_GetAnalyticsSummary_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetAnalyticsSummary*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_GetAnalyticsSummary_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetAnalyticsSummary(BLL.as_users)">GetAnalyticsSummary(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает модель для сводки целей</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FlowOfFundsModel GetAnalyticsSummary(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FinancialModeling.FlowOfFundsModel.html">FlowOfFundsModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_GetCostTables_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetCostTables*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_GetCostTables_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetCostTables(BLL.as_users)">GetCostTables(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает таблицы расходов для crm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CostsTablesModel GetCostTables(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Analytics.CostsTablesModel.html">CostsTablesModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_GetCostTypes_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetCostTypes*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_GetCostTypes" data-uid="BLL.Falcon.I.IAnalyticsManager.GetCostTypes">GetCostTypes()</h4>
+  <div class="markdown level1 summary"><p>Возвращает типы таблиц расходов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;BasicIdNameCodeModel&gt; GetCostTypes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.BasicIdNameCodeModel.html">BasicIdNameCodeModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_GetCrmTargets_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetCrmTargets*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_GetCrmTargets_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetCrmTargets(BLL.as_users)">GetCrmTargets(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает модель целей crm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CrmTargetsModel GetCrmTargets(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Analytics.CrmTargetsModel.html">CrmTargetsModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_GetManagerReport_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetManagerReport*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_GetManagerReport_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetManagerReport(System.Int32,BLL.as_users)">GetManagerReport(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Генерирует отчет по пользователю</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetManagerReport(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id пользователя</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_GetManagersResults_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetManagersResults*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_GetManagersResults_System_Int32_System_String_System_Int32_System_DateTime_System_DateTime_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetManagersResults(System.Int32,System.String,System.Int32,System.DateTime,System.DateTime,BLL.as_users)">GetManagersResults(Int32, String, Int32, DateTime, DateTime, as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает модель результатов менеджеров</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ManagersResultsModel GetManagersResults(int funnelID, string groupID, int managerID, DateTime from, DateTime to, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td><p>фильтр по воронке</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>фильтр по группе</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">managerID</span></td>
+        <td><p>фильтр по менеджеру</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>выборка с</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>выборка по</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Analytics.ManagersResultsModel.html">ManagersResultsModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_GetManagersTargets_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetManagersTargets*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_GetManagersTargets_BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.GetManagersTargets(BLL.as_users)">GetManagersTargets(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает модель целей менеджеров + настройку расчета прибыли от маржи</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ManagerTargetsModel GetManagersTargets(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Analytics.ManagerTargetsModel.html">ManagerTargetsModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_UpdateCostTableRow_" data-uid="BLL.Falcon.I.IAnalyticsManager.UpdateCostTableRow*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_UpdateCostTableRow_System_Int32_System_String_System_String_System_String__BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.UpdateCostTableRow(System.Int32,System.String,System.String,System.String@,BLL.as_users)">UpdateCostTableRow(Int32, String, String, out String, as_users)</h4>
+  <div class="markdown level1 summary"><p>Изменяет поле в таблице расходов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateCostTableRow(int id, string field, string value, out string msg, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id строки</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>название поля <a class="xref" href="BLL.Models.Analytics.CostTableFields.html">CostTableFields</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>новое значение</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_UpdateCrmTarget_" data-uid="BLL.Falcon.I.IAnalyticsManager.UpdateCrmTarget*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_UpdateCrmTarget_System_String_System_String_System_String__BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.UpdateCrmTarget(System.String,System.String,System.String@,BLL.as_users)">UpdateCrmTarget(String, String, out String, as_users)</h4>
+  <div class="markdown level1 summary"><p>Изменяет одну из целей компании</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateCrmTarget(string field, string value, out string msg, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>название поля <a class="xref" href="BLL.Models.Analytics.CrmTargetFields.html">CrmTargetFields</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>значение</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IAnalyticsManager_UpdateManagerTarget_" data-uid="BLL.Falcon.I.IAnalyticsManager.UpdateManagerTarget*"></a>
+  <h4 id="BLL_Falcon_I_IAnalyticsManager_UpdateManagerTarget_System_Int32_System_String_System_String_System_String__BLL_as_users_" data-uid="BLL.Falcon.I.IAnalyticsManager.UpdateManagerTarget(System.Int32,System.String,System.String,System.String@,BLL.as_users)">UpdateManagerTarget(Int32, String, String, out String, as_users)</h4>
+  <div class="markdown level1 summary"><p>Изменяет одну из целей менеджера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateManagerTarget(int managerID, string field, string value, out string msg, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">managerID</span></td>
+        <td><p>id менеджера</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">field</span></td>
+        <td><p>название поля <a class="xref" href="BLL.Models.Analytics.ManagerTargetFields.html">ManagerTargetFields</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>значение</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

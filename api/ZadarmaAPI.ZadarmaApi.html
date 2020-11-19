@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ZadarmaApi
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ZadarmaApi
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ZadarmaAPI.ZadarmaApi">
+  
+  
+  <h1 id="ZadarmaAPI_ZadarmaApi" data-uid="ZadarmaAPI.ZadarmaApi" class="text-break">Class ZadarmaApi
+  </h1>
+  <div class="markdown level0 summary"><p>Class implements Zadarma API</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ZadarmaApi</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ZadarmaAPI.html">ZadarmaAPI</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="ZadarmaAPI_ZadarmaApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ZadarmaApi</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi__ctor_" data-uid="ZadarmaAPI.ZadarmaApi.#ctor*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi__ctor_System_String_System_String_System_Boolean_" data-uid="ZadarmaAPI.ZadarmaApi.#ctor(System.String,System.String,System.Boolean)">ZadarmaApi(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZadarmaApi(string key, string secret, bool isSandbox = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key from personal</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">secret</span></td>
+        <td><p>Secret from personal</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSandbox</span></td>
+        <td><p>Sandbox (true|false)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi_IsSandbox_" data-uid="ZadarmaAPI.ZadarmaApi.IsSandbox*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi_IsSandbox" data-uid="ZadarmaAPI.ZadarmaApi.IsSandbox">IsSandbox</h4>
+  <div class="markdown level1 summary"><p>Is this client using a sandbox api</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSandbox { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi_Key_" data-uid="ZadarmaAPI.ZadarmaApi.Key*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi_Key" data-uid="ZadarmaAPI.ZadarmaApi.Key">Key</h4>
+  <div class="markdown level1 summary"><p>Key from personal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Key { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi_Secret_" data-uid="ZadarmaAPI.ZadarmaApi.Secret*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi_Secret" data-uid="ZadarmaAPI.ZadarmaApi.Secret">Secret</h4>
+  <div class="markdown level1 summary"><p>Secret from personal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Secret { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi_Call_" data-uid="ZadarmaAPI.ZadarmaApi.Call*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi_Call_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Net_Http_HttpMethod_System_String_System_Boolean_" data-uid="ZadarmaAPI.ZadarmaApi.Call(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.HttpMethod,System.String,System.Boolean)">Call(String, IDictionary&lt;String, String&gt;, HttpMethod, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Synchronized call to API</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpResponseMessage Call(string method, IDictionary&lt;string, string&gt; paramDictionary = null, HttpMethod requestType = null, string format = &quot;json&quot;, bool isAuth = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>API method (i.e. &quot;/v1/tariff/&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">paramDictionary</span></td>
+        <td><p>Parameter dictionary</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpMethod</span></td>
+        <td><span class="parametername">requestType</span></td>
+        <td><p>Type of request (PUT, POST, GET, DELETE)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Response format (xml or json)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAuth</span></td>
+        <td><p>Is auth needed (True or False)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpResponseMessage</span></td>
+        <td><p>Response message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi_CallAsync_" data-uid="ZadarmaAPI.ZadarmaApi.CallAsync*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi_CallAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Net_Http_HttpMethod_System_String_System_Boolean_" data-uid="ZadarmaAPI.ZadarmaApi.CallAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.HttpMethod,System.String,System.Boolean)">CallAsync(String, IDictionary&lt;String, String&gt;, HttpMethod, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Async call to API</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; CallAsync(string method, IDictionary&lt;string, string&gt; paramDictionary = null, HttpMethod requestType = null, string format = &quot;json&quot;, bool isAuth = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>API method (i.e. &quot;/v1/tariff/&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">paramDictionary</span></td>
+        <td><p>Parameter dictionary</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpMethod</span></td>
+        <td><span class="parametername">requestType</span></td>
+        <td><p>Type of request (PUT, POST, GET, DELETE)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Response format (xml or json)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAuth</span></td>
+        <td><p>Is auth needed (True or False)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td><p>Response message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi_GenerateRequest_" data-uid="ZadarmaAPI.ZadarmaApi.GenerateRequest*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi_GenerateRequest_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Net_Http_HttpMethod_System_String_System_Boolean_" data-uid="ZadarmaAPI.ZadarmaApi.GenerateRequest(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.HttpMethod,System.String,System.Boolean)">GenerateRequest(String, IDictionary&lt;String, String&gt;, HttpMethod, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Generate request message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestMessage GenerateRequest(string method, IDictionary&lt;string, string&gt; paramDictionary = null, HttpMethod requestType = null, string format = &quot;json&quot;, bool isAuth = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>API method (i.e. &quot;/v1/tariff/&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">paramDictionary</span></td>
+        <td><p>Parameter dictionary</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpMethod</span></td>
+        <td><span class="parametername">requestType</span></td>
+        <td><p>Type of request (PUT, POST, GET, DELETE)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Response format (xml or json)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAuth</span></td>
+        <td><p>Is auth needed (True or False)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><p>Request message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ZadarmaAPI_ZadarmaApi_GetAuthStringForHeader_" data-uid="ZadarmaAPI.ZadarmaApi.GetAuthStringForHeader*"></a>
+  <h4 id="ZadarmaAPI_ZadarmaApi_GetAuthStringForHeader_System_String_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="ZadarmaAPI.ZadarmaApi.GetAuthStringForHeader(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">GetAuthStringForHeader(String, IDictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generate auth header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetAuthStringForHeader(string method, IDictionary&lt;string, string&gt; paramDictionary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>API method, including version number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">paramDictionary</span></td>
+        <td><p>Query params dict</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>auth header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ITriggerManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ITriggerManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.ITriggerManager">
+  
+  
+  <h1 id="BLL_Falcon_I_ITriggerManager" data-uid="BLL.Falcon.I.ITriggerManager" class="text-break">Interface ITriggerManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_ITriggerManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITriggerManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_ActivateCrmTriggers_" data-uid="BLL.Falcon.I.ITriggerManager.ActivateCrmTriggers*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_ActivateCrmTriggers_System_String_System_Int32_" data-uid="BLL.Falcon.I.ITriggerManager.ActivateCrmTriggers(System.String,System.Int32)">ActivateCrmTriggers(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ActivateCrmTriggers(string triggerCase, int crmID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">triggerCase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">crmID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_ActivateDealTrigger_" data-uid="BLL.Falcon.I.ITriggerManager.ActivateDealTrigger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_ActivateDealTrigger_System_String_System_Int32_" data-uid="BLL.Falcon.I.ITriggerManager.ActivateDealTrigger(System.String,System.Int32)">ActivateDealTrigger(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ActivateDealTrigger(string triggerCase, int dealID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">triggerCase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dealID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_ActivateSiteTrigger_" data-uid="BLL.Falcon.I.ITriggerManager.ActivateSiteTrigger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_ActivateSiteTrigger_System_String_System_String__" data-uid="BLL.Falcon.I.ITriggerManager.ActivateSiteTrigger(System.String,System.String@)">ActivateSiteTrigger(String, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ActivateSiteTrigger(string guidString, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guidString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_ChangeTrigerStage_" data-uid="BLL.Falcon.I.ITriggerManager.ChangeTrigerStage*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_ChangeTrigerStage_System_Int32_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.ITriggerManager.ChangeTrigerStage(System.Int32,System.Int32,BLL.as_users)">ChangeTrigerStage(Int32, Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Копирование триггера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeTrigerStage(int id, int targetStageID, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id триггера</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetStageID</span></td>
+        <td><p>id нового этапа</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_CloneTriger_" data-uid="BLL.Falcon.I.ITriggerManager.CloneTriger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_CloneTriger_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.ITriggerManager.CloneTriger(System.Int32,BLL.as_users)">CloneTriger(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Копирование триггера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CloneTriger(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id триггера</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_CreateTrigger_" data-uid="BLL.Falcon.I.ITriggerManager.CreateTrigger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_CreateTrigger_BLL_as_users_BLL_Models_Trigger_TriggerCase_System_String__" data-uid="BLL.Falcon.I.ITriggerManager.CreateTrigger(BLL.as_users,BLL.Models.Trigger.TriggerCase,System.String@)">CreateTrigger(as_users, TriggerCase, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TriggerModel CreateTrigger(as_users user, TriggerCase triggerCase, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Trigger.TriggerCase.html">TriggerCase</a></td>
+        <td><span class="parametername">triggerCase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Trigger.UI.TriggerModel.html">TriggerModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_DeleteTriger_" data-uid="BLL.Falcon.I.ITriggerManager.DeleteTriger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_DeleteTriger_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.ITriggerManager.DeleteTriger(System.Int32,BLL.as_users)">DeleteTriger(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удаление триггера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteTriger(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id триггера</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_GetAutoFunnelsDataModel_" data-uid="BLL.Falcon.I.ITriggerManager.GetAutoFunnelsDataModel*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_GetAutoFunnelsDataModel_BLL_as_users_" data-uid="BLL.Falcon.I.ITriggerManager.GetAutoFunnelsDataModel(BLL.as_users)">GetAutoFunnelsDataModel(as_users)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AutoFunnelsDataModel GetAutoFunnelsDataModel(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Trigger.AutoFunnelsDataModel.html">AutoFunnelsDataModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_GetTaskDeadlineTypes_" data-uid="BLL.Falcon.I.ITriggerManager.GetTaskDeadlineTypes*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_GetTaskDeadlineTypes_BLL_as_users_" data-uid="BLL.Falcon.I.ITriggerManager.GetTaskDeadlineTypes(BLL.as_users)">GetTaskDeadlineTypes(as_users)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TaskDeadlineType&gt; GetTaskDeadlineTypes(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.TaskDeadlineType.html">TaskDeadlineType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_GetTemplatesAndManagers_" data-uid="BLL.Falcon.I.ITriggerManager.GetTemplatesAndManagers*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_GetTemplatesAndManagers_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.ITriggerManager.GetTemplatesAndManagers(BLL.as_users,System.Int32)">GetTemplatesAndManagers(as_users, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TemplateAndManagersModel GetTemplatesAndManagers(as_users user, int messageTypeID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">messageTypeID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Trigger.HelperModels.TemplateAndManagersModel.html">TemplateAndManagersModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_GetTrigger_" data-uid="BLL.Falcon.I.ITriggerManager.GetTrigger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_GetTrigger_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.ITriggerManager.GetTrigger(BLL.as_users,System.Int32)">GetTrigger(as_users, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TriggerGlobalModel GetTrigger(as_users user, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Trigger.UI.TriggerGlobalModel.html">TriggerGlobalModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_GetTriggerCases_" data-uid="BLL.Falcon.I.ITriggerManager.GetTriggerCases*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_GetTriggerCases_BLL_as_users_" data-uid="BLL.Falcon.I.ITriggerManager.GetTriggerCases(BLL.as_users)">GetTriggerCases(as_users)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TriggerCaseType&gt; GetTriggerCases(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.TriggerCaseType.html">TriggerCaseType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_GetTriggers_" data-uid="BLL.Falcon.I.ITriggerManager.GetTriggers*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_GetTriggers_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.ITriggerManager.GetTriggers(BLL.as_users,System.Int32)">GetTriggers(as_users, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TriggerModel&gt; GetTriggers(as_users user, int funnelStageID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelStageID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.UI.TriggerModel.html">TriggerModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_GetTriggersByFunnel_" data-uid="BLL.Falcon.I.ITriggerManager.GetTriggersByFunnel*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_GetTriggersByFunnel_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.ITriggerManager.GetTriggersByFunnel(BLL.as_users,System.Int32)">GetTriggersByFunnel(as_users, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TriggerModel&gt; GetTriggersByFunnel(as_users user, int funnelID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.UI.TriggerModel.html">TriggerModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_HasChangeResponsibleTrigger_" data-uid="BLL.Falcon.I.ITriggerManager.HasChangeResponsibleTrigger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_HasChangeResponsibleTrigger_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.ITriggerManager.HasChangeResponsibleTrigger(BLL.as_users,System.Int32)">HasChangeResponsibleTrigger(as_users, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasChangeResponsibleTrigger(as_users user, int stageID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stageID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_SaveAll_" data-uid="BLL.Falcon.I.ITriggerManager.SaveAll*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_SaveAll_BLL_as_users_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_BLL_Models_Trigger_UI_TriggerMove__System_Collections_Generic_List_BLL_Models_Trigger_UI_TriggerCopy__System_Collections_Generic_List_BLL_Models_Trigger_UI_TriggerOrder__" data-uid="BLL.Falcon.I.ITriggerManager.SaveAll(BLL.as_users,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{BLL.Models.Trigger.UI.TriggerMove},System.Collections.Generic.List{BLL.Models.Trigger.UI.TriggerCopy},System.Collections.Generic.List{BLL.Models.Trigger.UI.TriggerOrder})">SaveAll(as_users, List&lt;Int32&gt;, List&lt;TriggerMove&gt;, List&lt;TriggerCopy&gt;, List&lt;TriggerOrder&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SaveAll(as_users user, List&lt;int&gt; deletedTriggerIDs, List&lt;TriggerMove&gt; movedTriggers, List&lt;TriggerCopy&gt; copiedTriggers, List&lt;TriggerOrder&gt; orderedTriggers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">deletedTriggerIDs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.UI.TriggerMove.html">TriggerMove</a>&gt;</td>
+        <td><span class="parametername">movedTriggers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.UI.TriggerCopy.html">TriggerCopy</a>&gt;</td>
+        <td><span class="parametername">copiedTriggers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Trigger.UI.TriggerOrder.html">TriggerOrder</a>&gt;</td>
+        <td><span class="parametername">orderedTriggers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_SendEmail_" data-uid="BLL.Falcon.I.ITriggerManager.SendEmail*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_SendEmail_BLL_aib_crm_tr_triggers_BLL_aib_crm_tr_triggerSendMessages_System_Collections_Generic_List_BLL_aib_contacts__BLL_aib_deals_" data-uid="BLL.Falcon.I.ITriggerManager.SendEmail(BLL.aib_crm_tr_triggers,BLL.aib_crm_tr_triggerSendMessages,System.Collections.Generic.List{BLL.aib_contacts},BLL.aib_deals)">SendEmail(aib_crm_tr_triggers, aib_crm_tr_triggerSendMessages, List&lt;aib_contacts&gt;, aib_deals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendEmail(aib_crm_tr_triggers trigger, aib_crm_tr_triggerSendMessages sendMessageTrigger, List&lt;aib_contacts&gt; contacts, aib_deals deal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggers.html">aib_crm_tr_triggers</a></td>
+        <td><span class="parametername">trigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggerSendMessages.html">aib_crm_tr_triggerSendMessages</a></td>
+        <td><span class="parametername">sendMessageTrigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_contacts.html">aib_contacts</a>&gt;</td>
+        <td><span class="parametername">contacts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_SendFacebookMessage_" data-uid="BLL.Falcon.I.ITriggerManager.SendFacebookMessage*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_SendFacebookMessage_BLL_aib_crm_tr_triggers_BLL_aib_crm_tr_triggerSendMessages_System_Collections_Generic_List_BLL_aib_contacts__BLL_aib_deals_" data-uid="BLL.Falcon.I.ITriggerManager.SendFacebookMessage(BLL.aib_crm_tr_triggers,BLL.aib_crm_tr_triggerSendMessages,System.Collections.Generic.List{BLL.aib_contacts},BLL.aib_deals)">SendFacebookMessage(aib_crm_tr_triggers, aib_crm_tr_triggerSendMessages, List&lt;aib_contacts&gt;, aib_deals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendFacebookMessage(aib_crm_tr_triggers trigger, aib_crm_tr_triggerSendMessages sendMessageTrigger, List&lt;aib_contacts&gt; contacts, aib_deals deal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggers.html">aib_crm_tr_triggers</a></td>
+        <td><span class="parametername">trigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggerSendMessages.html">aib_crm_tr_triggerSendMessages</a></td>
+        <td><span class="parametername">sendMessageTrigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_contacts.html">aib_contacts</a>&gt;</td>
+        <td><span class="parametername">contacts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_SendSMS_" data-uid="BLL.Falcon.I.ITriggerManager.SendSMS*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_SendSMS_BLL_aib_crm_tr_triggers_BLL_aib_crm_tr_triggerSendMessages_System_Collections_Generic_List_BLL_aib_contacts__BLL_aib_deals_" data-uid="BLL.Falcon.I.ITriggerManager.SendSMS(BLL.aib_crm_tr_triggers,BLL.aib_crm_tr_triggerSendMessages,System.Collections.Generic.List{BLL.aib_contacts},BLL.aib_deals)">SendSMS(aib_crm_tr_triggers, aib_crm_tr_triggerSendMessages, List&lt;aib_contacts&gt;, aib_deals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendSMS(aib_crm_tr_triggers trigger, aib_crm_tr_triggerSendMessages sendMessageTrigger, List&lt;aib_contacts&gt; contacts, aib_deals deal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggers.html">aib_crm_tr_triggers</a></td>
+        <td><span class="parametername">trigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggerSendMessages.html">aib_crm_tr_triggerSendMessages</a></td>
+        <td><span class="parametername">sendMessageTrigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_contacts.html">aib_contacts</a>&gt;</td>
+        <td><span class="parametername">contacts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_SendTelegramMessage_" data-uid="BLL.Falcon.I.ITriggerManager.SendTelegramMessage*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_SendTelegramMessage_BLL_aib_crm_tr_triggers_BLL_aib_crm_tr_triggerSendMessages_System_Collections_Generic_List_BLL_aib_contacts__BLL_aib_deals_" data-uid="BLL.Falcon.I.ITriggerManager.SendTelegramMessage(BLL.aib_crm_tr_triggers,BLL.aib_crm_tr_triggerSendMessages,System.Collections.Generic.List{BLL.aib_contacts},BLL.aib_deals)">SendTelegramMessage(aib_crm_tr_triggers, aib_crm_tr_triggerSendMessages, List&lt;aib_contacts&gt;, aib_deals)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendTelegramMessage(aib_crm_tr_triggers trigger, aib_crm_tr_triggerSendMessages sendMessageTrigger, List&lt;aib_contacts&gt; contacts, aib_deals deal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggers.html">aib_crm_tr_triggers</a></td>
+        <td><span class="parametername">trigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggerSendMessages.html">aib_crm_tr_triggerSendMessages</a></td>
+        <td><span class="parametername">sendMessageTrigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_contacts.html">aib_contacts</a>&gt;</td>
+        <td><span class="parametername">contacts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_SendVkMessage_" data-uid="BLL.Falcon.I.ITriggerManager.SendVkMessage*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_SendVkMessage_BLL_aib_crm_tr_triggers_BLL_aib_crm_tr_triggerSendMessages_System_Collections_Generic_List_BLL_aib_contacts__BLL_aib_deals_System_Boolean_" data-uid="BLL.Falcon.I.ITriggerManager.SendVkMessage(BLL.aib_crm_tr_triggers,BLL.aib_crm_tr_triggerSendMessages,System.Collections.Generic.List{BLL.aib_contacts},BLL.aib_deals,System.Boolean)">SendVkMessage(aib_crm_tr_triggers, aib_crm_tr_triggerSendMessages, List&lt;aib_contacts&gt;, aib_deals, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendVkMessage(aib_crm_tr_triggers trigger, aib_crm_tr_triggerSendMessages sendMessageTrigger, List&lt;aib_contacts&gt; contacts, aib_deals deal, bool isWallPost = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggers.html">aib_crm_tr_triggers</a></td>
+        <td><span class="parametername">trigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_crm_tr_triggerSendMessages.html">aib_crm_tr_triggerSendMessages</a></td>
+        <td><span class="parametername">sendMessageTrigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_contacts.html">aib_contacts</a>&gt;</td>
+        <td><span class="parametername">contacts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isWallPost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ITriggerManager_UpdateTrigger_" data-uid="BLL.Falcon.I.ITriggerManager.UpdateTrigger*"></a>
+  <h4 id="BLL_Falcon_I_ITriggerManager_UpdateTrigger_BLL_as_users_BLL_Models_Trigger_UI_TriggerGlobalModel_System_String__" data-uid="BLL.Falcon.I.ITriggerManager.UpdateTrigger(BLL.as_users,BLL.Models.Trigger.UI.TriggerGlobalModel,System.String@)">UpdateTrigger(as_users, TriggerGlobalModel, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TriggerModel UpdateTrigger(as_users user, TriggerGlobalModel triggerModel, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Trigger.UI.TriggerGlobalModel.html">TriggerGlobalModel</a></td>
+        <td><span class="parametername">triggerModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Trigger.UI.TriggerModel.html">TriggerModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

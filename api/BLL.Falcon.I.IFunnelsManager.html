@@ -1,0 +1,1017 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFunnelsManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFunnelsManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.IFunnelsManager">
+  
+  
+  <h1 id="BLL_Falcon_I_IFunnelsManager" data-uid="BLL.Falcon.I.IFunnelsManager" class="text-break">Interface IFunnelsManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_IFunnelsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFunnelsManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_AddFunnelStage_" data-uid="BLL.Falcon.I.IFunnelsManager.AddFunnelStage*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_AddFunnelStage_BLL_as_users_System_Int32_System_String_System_Int32_System_String__" data-uid="BLL.Falcon.I.IFunnelsManager.AddFunnelStage(BLL.as_users,System.Int32,System.String,System.Int32,System.String@)">AddFunnelStage(as_users, Int32, String, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Добавить этап воронки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddFunnelStage(as_users user, int funnelID, string name, int ord, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ord</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_ChangeFunnelStage_" data-uid="BLL.Falcon.I.IFunnelsManager.ChangeFunnelStage*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_ChangeFunnelStage_System_Int32_System_String_System_Int32_System_String_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.IFunnelsManager.ChangeFunnelStage(System.Int32,System.String,System.Int32,System.String,BLL.as_users,System.String@)">ChangeFunnelStage(Int32, String, Int32, String, as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Редактирование этапа воронки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeFunnelStage(int id, string name, int days, string color, as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id этапа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>название этапа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">days</span></td>
+        <td><p>(дедлайн этапа) сколько дней сделка может находится в этапе</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>цвет этапа</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_ChangeFunnelStageOrder_" data-uid="BLL.Falcon.I.IFunnelsManager.ChangeFunnelStageOrder*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_ChangeFunnelStageOrder_System_Int32_System_Int32_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.IFunnelsManager.ChangeFunnelStageOrder(System.Int32,System.Int32,BLL.as_users,System.String@)">ChangeFunnelStageOrder(Int32, Int32, as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Редактирование порядкового номера этапа воронки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeFunnelStageOrder(int id, int order, as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id этапа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">order</span></td>
+        <td><p>порядковый номер этапа</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_CreateFunnel_" data-uid="BLL.Falcon.I.IFunnelsManager.CreateFunnel*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_CreateFunnel_BLL_as_users_System_String_" data-uid="BLL.Falcon.I.IFunnelsManager.CreateFunnel(BLL.as_users,System.String)">CreateFunnel(as_users, String)</h4>
+  <div class="markdown level1 summary"><p>Создать воронку</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">aib_funnels CreateFunnel(as_users user, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>название</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_funnels.html">aib_funnels</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_DeleteFunnel_" data-uid="BLL.Falcon.I.IFunnelsManager.DeleteFunnel*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_DeleteFunnel_BLL_as_users_System_Int32_System_Int32_" data-uid="BLL.Falcon.I.IFunnelsManager.DeleteFunnel(BLL.as_users,System.Int32,System.Int32)">DeleteFunnel(as_users, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Удалить воронку</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteFunnel(as_users user, int funnelID, int newFunnelID = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td><p>воронка</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newFunnelID</span></td>
+        <td><p>куда перенести сделки</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_DeleteFunnelStage_" data-uid="BLL.Falcon.I.IFunnelsManager.DeleteFunnelStage*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_DeleteFunnelStage_BLL_as_users_System_Int32_System_String__" data-uid="BLL.Falcon.I.IFunnelsManager.DeleteFunnelStage(BLL.as_users,System.Int32,System.String@)">DeleteFunnelStage(as_users, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Удалить этап продаж</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteFunnelStage(as_users user, int funnelStageID, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelStageID</span></td>
+        <td><p>этап</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnel_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnel*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnel_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnel(BLL.as_users,System.Int32)">GetFunnel(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить модель воронки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FunnelModel GetFunnel(as_users user, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Funnels.FunnelModel.html">FunnelModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnelByFunnelStage_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelByFunnelStage*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnelByFunnelStage_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelByFunnelStage(BLL.as_users,System.Int32)">GetFunnelByFunnelStage(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить воронку по её этапу</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">aib_funnels GetFunnelByFunnelStage(as_users user, int funnelStageID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelStageID</span></td>
+        <td><p>этап</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_funnels.html">aib_funnels</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnels_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnels*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnels_BLL_as_users_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnels(BLL.as_users)">GetFunnels(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить воронки для crm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FunnelModel&gt; GetFunnels(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Funnels.FunnelModel.html">FunnelModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnels_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnels*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnels_BLL_as_users_System_Collections_Generic_List_System_Int32__" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnels(BLL.as_users,System.Collections.Generic.List{System.Int32})">GetFunnels(as_users, List&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Получить воронки (с фильтром)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_funnels&gt; GetFunnels(as_users user, List&lt;int&gt; funnelsID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">funnelsID</span></td>
+        <td><p>фильтр по воронкам</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_funnels.html">aib_funnels</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnelsAll_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelsAll*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnelsAll_BLL_as_users_System_Boolean_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelsAll(BLL.as_users,System.Boolean)">GetFunnelsAll(as_users, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Возвращает все воронки для crm пользователя</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_funnels&gt; GetFunnelsAll(as_users user, bool includeClaims = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeClaims</span></td>
+        <td><p>учитывать ли ограничения (claims)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_funnels.html">aib_funnels</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnelsSimpleModel_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelsSimpleModel*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnelsSimpleModel_BLL_as_users_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelsSimpleModel(BLL.as_users)">GetFunnelsSimpleModel(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает упрощенную модель воронки с этапами</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FunnelModelSimple&gt; GetFunnelsSimpleModel(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Funnels.FunnelModelSimple.html">FunnelModelSimple</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnelStages_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelStages*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnelStages_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelStages(BLL.as_users,System.Int32)">GetFunnelStages(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить этапы воронки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_funnelStages&gt; GetFunnelStages(as_users user, int funnelID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td><p>воронка</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_funnelStages.html">aib_funnelStages</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetFunnelStagesAll_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelStagesAll*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetFunnelStagesAll_BLL_as_users_" data-uid="BLL.Falcon.I.IFunnelsManager.GetFunnelStagesAll(BLL.as_users)">GetFunnelStagesAll(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получть все этапы продаж в crm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_funnelStages&gt; GetFunnelStagesAll(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_funnelStages.html">aib_funnelStages</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_GetRejectionReasons_" data-uid="BLL.Falcon.I.IFunnelsManager.GetRejectionReasons*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_GetRejectionReasons_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFunnelsManager.GetRejectionReasons(BLL.as_users,System.Int32)">GetRejectionReasons(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить причины отказа</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_funnelRejectionReasons&gt; GetRejectionReasons(as_users user, int funnelID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td><p>воронка</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_funnelRejectionReasons.html">aib_funnelRejectionReasons</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_UpdateFunnel_" data-uid="BLL.Falcon.I.IFunnelsManager.UpdateFunnel*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_UpdateFunnel_BLL_as_users_System_Int32_System_String_System_Collections_Generic_List_BLL_Models_Funnels_FunnelStagesModel__" data-uid="BLL.Falcon.I.IFunnelsManager.UpdateFunnel(BLL.as_users,System.Int32,System.String,System.Collections.Generic.List{BLL.Models.Funnels.FunnelStagesModel})">UpdateFunnel(as_users, Int32, String, List&lt;FunnelStagesModel&gt;)</h4>
+  <div class="markdown level1 summary"><p>Редактирование воронки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateFunnel(as_users user, int funnelID, string name, List&lt;FunnelStagesModel&gt; stages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Funnels.FunnelStagesModel.html">FunnelStagesModel</a>&gt;</td>
+        <td><span class="parametername">stages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFunnelsManager_UpdateRejectionReasons_" data-uid="BLL.Falcon.I.IFunnelsManager.UpdateRejectionReasons*"></a>
+  <h4 id="BLL_Falcon_I_IFunnelsManager_UpdateRejectionReasons_BLL_as_users_System_Int32_System_Collections_Generic_List_BLL_aib_funnelRejectionReasons__" data-uid="BLL.Falcon.I.IFunnelsManager.UpdateRejectionReasons(BLL.as_users,System.Int32,System.Collections.Generic.List{BLL.aib_funnelRejectionReasons})">UpdateRejectionReasons(as_users, Int32, List&lt;aib_funnelRejectionReasons&gt;)</h4>
+  <div class="markdown level1 summary"><p>Редактировать причины отказа</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateRejectionReasons(as_users user, int funnelID, List&lt;aib_funnelRejectionReasons&gt; reasons)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td><p>воронка</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_funnelRejectionReasons.html">aib_funnelRejectionReasons</a>&gt;</td>
+        <td><span class="parametername">reasons</span></td>
+        <td><p>причины</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

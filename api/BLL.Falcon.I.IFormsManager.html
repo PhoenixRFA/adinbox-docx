@@ -1,0 +1,1483 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFormsManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFormsManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.IFormsManager">
+  
+  
+  <h1 id="BLL_Falcon_I_IFormsManager" data-uid="BLL.Falcon.I.IFormsManager" class="text-break">Interface IFormsManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_IFormsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFormsManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_CopyForm_" data-uid="BLL.Falcon.I.IFormsManager.CopyForm*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_CopyForm_BLL_as_users_System_Int32_System_String__" data-uid="BLL.Falcon.I.IFormsManager.CopyForm(BLL.as_users,System.Int32,System.String@)">CopyForm(as_users, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Клонировать форму</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CopyForm(as_users user, int formID, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">formID</span></td>
+        <td><p>форма</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_DeleteForm_" data-uid="BLL.Falcon.I.IFormsManager.DeleteForm*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_DeleteForm_BLL_as_users_System_Int32_System_String__" data-uid="BLL.Falcon.I.IFormsManager.DeleteForm(BLL.as_users,System.Int32,System.String@)">DeleteForm(as_users, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Удаление формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteForm(as_users user, int id, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_DeleteFormResource_" data-uid="BLL.Falcon.I.IFormsManager.DeleteFormResource*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_DeleteFormResource_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.DeleteFormResource(System.Int32,BLL.as_users)">DeleteFormResource(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удаляет изображение</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteFormResource(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id ресурса</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_DeleteOldFormImage_" data-uid="BLL.Falcon.I.IFormsManager.DeleteOldFormImage*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_DeleteOldFormImage_System_String_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.DeleteOldFormImage(System.String,BLL.as_users)">DeleteOldFormImage(String, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удаляет ранее загруженное изображение по url</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteOldFormImage(string url, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>url изображения</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GenerateFormName_" data-uid="BLL.Falcon.I.IFormsManager.GenerateFormName*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GenerateFormName" data-uid="BLL.Falcon.I.IFormsManager.GenerateFormName">GenerateFormName()</h4>
+  <div class="markdown level1 summary"><p>Сгененрировать имя для формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GenerateFormName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFeedbackFBData_" data-uid="BLL.Falcon.I.IFormsManager.GetFeedbackFBData*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFeedbackFBData_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFormsManager.GetFeedbackFBData(BLL.as_users,System.Int32)">GetFeedbackFBData(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить view модель формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FeedbackFBViewModel GetFeedbackFBData(as_users user, int id = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FeedbackFBViewModel.html">FeedbackFBViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFieldNamePositions_" data-uid="BLL.Falcon.I.IFormsManager.GetFieldNamePositions*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFieldNamePositions_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetFieldNamePositions(BLL.as_users)">GetFieldNamePositions(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить положение метки на поле формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_form_fieldNamePositions&gt; GetFieldNamePositions(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_form_fieldNamePositions.html">aib_form_fieldNamePositions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFieldShapes_" data-uid="BLL.Falcon.I.IFormsManager.GetFieldShapes*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFieldShapes_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetFieldShapes(BLL.as_users)">GetFieldShapes(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить формы полей</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_form_fieldShapes&gt; GetFieldShapes(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_form_fieldShapes.html">aib_form_fieldShapes</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFieldTypes_" data-uid="BLL.Falcon.I.IFormsManager.GetFieldTypes*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFieldTypes_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetFieldTypes(BLL.as_users)">GetFieldTypes(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить типы полей форм</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FormFieldTypeGroup&gt; GetFieldTypes(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.FeedbackFormBuilder.FormFieldTypeGroup.html">FormFieldTypeGroup</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFonts_" data-uid="BLL.Falcon.I.IFormsManager.GetFonts*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFonts_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetFonts(BLL.as_users)">GetFonts(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить шрифты для форм</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_form_fonts&gt; GetFonts(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_form_fonts.html">aib_form_fonts</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetForm_" data-uid="BLL.Falcon.I.IFormsManager.GetForm*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetForm_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFormsManager.GetForm(BLL.as_users,System.Int32)">GetForm(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить форму по id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">aib_forms GetForm(as_users user, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_forms.html">aib_forms</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFormBackgrounds_" data-uid="BLL.Falcon.I.IFormsManager.GetFormBackgrounds*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFormBackgrounds_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetFormBackgrounds(BLL.as_users)">GetFormBackgrounds(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает изображения для фона формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FormResourceModel&gt; GetFormBackgrounds(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.FeedbackFormBuilder.FormResourceModel.html">FormResourceModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFormFields_" data-uid="BLL.Falcon.I.IFormsManager.GetFormFields*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFormFields_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetFormFields(System.Int32,BLL.as_users)">GetFormFields(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает значения полей формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FeedbackFBFormFieldViewModel&gt; GetFormFields(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id формы</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.FeedbackFormBuilder.FeedbackFBFormFieldViewModel.html">FeedbackFBFormFieldViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFormGenerationModel_" data-uid="BLL.Falcon.I.IFormsManager.GetFormGenerationModel*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFormGenerationModel_System_Guid_" data-uid="BLL.Falcon.I.IFormsManager.GetFormGenerationModel(System.Guid)">GetFormGenerationModel(Guid)</h4>
+  <div class="markdown level1 summary"><p>Возвращает модель для генерации формы (см. _GeneratedFeedbackForm.cshtml)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FormGenerationModel GetFormGenerationModel(Guid guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>guid формы</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FormGenerationModel.html">FormGenerationModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFormGenerationModel_" data-uid="BLL.Falcon.I.IFormsManager.GetFormGenerationModel*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFormGenerationModel_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetFormGenerationModel(System.Int32,BLL.as_users)">GetFormGenerationModel(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает модель для генерации формы (см. _GeneratedFeedbackForm.cshtml)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FormGenerationModel GetFormGenerationModel(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id формы</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FormGenerationModel.html">FormGenerationModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetFormParams_" data-uid="BLL.Falcon.I.IFormsManager.GetFormParams*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetFormParams_System_Guid_" data-uid="BLL.Falcon.I.IFormsManager.GetFormParams(System.Guid)">GetFormParams(Guid)</h4>
+  <div class="markdown level1 summary"><p>Возвращает параметры формы для размещения формы на другом сайте</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FeedbackFormParams GetFormParams(Guid guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FeedbackFormParams.html">FeedbackFormParams</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetForms_" data-uid="BLL.Falcon.I.IFormsManager.GetForms*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetForms_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetForms(BLL.as_users)">GetForms(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить все формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_forms&gt; GetForms(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_forms.html">aib_forms</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetForms_" data-uid="BLL.Falcon.I.IFormsManager.GetForms*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetForms_BLL_as_users_BLL_Models_ASCRUDGetItemsModel_" data-uid="BLL.Falcon.I.IFormsManager.GetForms(BLL.as_users,BLL.Models.ASCRUDGetItemsModel)">GetForms(as_users, ASCRUDGetItemsModel)</h4>
+  <div class="markdown level1 summary"><p>Получить формы с пагинацией</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FormModel GetForms(as_users user, ASCRUDGetItemsModel parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.ASCRUDGetItemsModel.html">ASCRUDGetItemsModel</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>пагинация</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Forms.FormModel.html">FormModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetLogos_" data-uid="BLL.Falcon.I.IFormsManager.GetLogos*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetLogos_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetLogos(BLL.as_users)">GetLogos(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает изображения для лого</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FormResourceModel&gt; GetLogos(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.FeedbackFormBuilder.FormResourceModel.html">FormResourceModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetPageBackgrounds_" data-uid="BLL.Falcon.I.IFormsManager.GetPageBackgrounds*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetPageBackgrounds_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetPageBackgrounds(BLL.as_users)">GetPageBackgrounds(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает изображения для фона страницы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FormResourceModel&gt; GetPageBackgrounds(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.FeedbackFormBuilder.FormResourceModel.html">FormResourceModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetPositions_" data-uid="BLL.Falcon.I.IFormsManager.GetPositions*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetPositions_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetPositions(BLL.as_users)">GetPositions(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить положения на форме/странице</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_form_positions&gt; GetPositions(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_form_positions.html">aib_form_positions</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_GetStyleTemplates_" data-uid="BLL.Falcon.I.IFormsManager.GetStyleTemplates*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_GetStyleTemplates_BLL_as_users_" data-uid="BLL.Falcon.I.IFormsManager.GetStyleTemplates(BLL.as_users)">GetStyleTemplates(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить шаблоны стилей для форм</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_form_styleTemplates&gt; GetStyleTemplates(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_form_styleTemplates.html">aib_form_styleTemplates</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_HandleFeedbackFormSubmit_" data-uid="BLL.Falcon.I.IFormsManager.HandleFeedbackFormSubmit*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_HandleFeedbackFormSubmit_BLL_Models_FeedbackFormBuilder_FeedbackFormData_System_String__" data-uid="BLL.Falcon.I.IFormsManager.HandleFeedbackFormSubmit(BLL.Models.FeedbackFormBuilder.FeedbackFormData,System.String@)">HandleFeedbackFormSubmit(FeedbackFormData, out String)</h4>
+  <div class="markdown level1 summary"><p>Обработка формы обратной связи</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HandleFeedbackFormSubmit(FeedbackFormData model, out string submitText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FeedbackFormData.html">FeedbackFormData</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">submitText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_SaveForm_" data-uid="BLL.Falcon.I.IFormsManager.SaveForm*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_SaveForm_BLL_as_users_BLL_aib_forms_System_String__" data-uid="BLL.Falcon.I.IFormsManager.SaveForm(BLL.as_users,BLL.aib_forms,System.String@)">SaveForm(as_users, aib_forms, out String)</h4>
+  <div class="markdown level1 summary"><p>Созарнение формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SaveForm(as_users user, aib_forms item, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_forms.html">aib_forms</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_SaveForm_" data-uid="BLL.Falcon.I.IFormsManager.SaveForm*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_SaveForm_BLL_as_users_BLL_Models_FeedbackFormBuilder_FeedbackFBModel_System_String__" data-uid="BLL.Falcon.I.IFormsManager.SaveForm(BLL.as_users,BLL.Models.FeedbackFormBuilder.FeedbackFBModel,System.String@)">SaveForm(as_users, FeedbackFBModel, out String)</h4>
+  <div class="markdown level1 summary"><p>Созранить форму</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SaveForm(as_users user, FeedbackFBModel model, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FeedbackFBModel.html">FeedbackFBModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_UploadFormBackground_" data-uid="BLL.Falcon.I.IFormsManager.UploadFormBackground*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_UploadFormBackground_System_Web_HttpPostedFileBase_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.IFormsManager.UploadFormBackground(System.Web.HttpPostedFileBase,BLL.as_users,System.String@)">UploadFormBackground(HttpPostedFileBase, as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Сохраняет файл для фона формы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FormResourceModel UploadFormBackground(HttpPostedFileBase upload, as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.HttpPostedFileBase</span></td>
+        <td><span class="parametername">upload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FormResourceModel.html">FormResourceModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_UploadFormImage_" data-uid="BLL.Falcon.I.IFormsManager.UploadFormImage*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_UploadFormImage_System_Web_HttpPostedFileBase_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.IFormsManager.UploadFormImage(System.Web.HttpPostedFileBase,BLL.as_users,System.String@)">UploadFormImage(HttpPostedFileBase, as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Сохраняет изображение для картинки в форму</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FormResourceModel UploadFormImage(HttpPostedFileBase upload, as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.HttpPostedFileBase</span></td>
+        <td><span class="parametername">upload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FormResourceModel.html">FormResourceModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_UploadLogo_" data-uid="BLL.Falcon.I.IFormsManager.UploadLogo*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_UploadLogo_System_Web_HttpPostedFileBase_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.IFormsManager.UploadLogo(System.Web.HttpPostedFileBase,BLL.as_users,System.String@)">UploadLogo(HttpPostedFileBase, as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Сохраняет лого</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FormResourceModel UploadLogo(HttpPostedFileBase upload, as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.HttpPostedFileBase</span></td>
+        <td><span class="parametername">upload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FormResourceModel.html">FormResourceModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFormsManager_UploadPageBackground_" data-uid="BLL.Falcon.I.IFormsManager.UploadPageBackground*"></a>
+  <h4 id="BLL_Falcon_I_IFormsManager_UploadPageBackground_System_Web_HttpPostedFileBase_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.IFormsManager.UploadPageBackground(System.Web.HttpPostedFileBase,BLL.as_users,System.String@)">UploadPageBackground(HttpPostedFileBase, as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Сохраняет файл для фона страницы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FormResourceModel UploadPageBackground(HttpPostedFileBase upload, as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Web.HttpPostedFileBase</span></td>
+        <td><span class="parametername">upload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FeedbackFormBuilder.FormResourceModel.html">FormResourceModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

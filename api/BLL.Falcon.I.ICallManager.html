@@ -1,0 +1,1395 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ICallManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ICallManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.ICallManager">
+  
+  
+  <h1 id="BLL_Falcon_I_ICallManager" data-uid="BLL.Falcon.I.ICallManager" class="text-break">Interface ICallManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_ICallManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICallManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_AttachRecord_" data-uid="BLL.Falcon.I.ICallManager.AttachRecord*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_AttachRecord_BLL_as_users_System_Int32_System_Web_HttpPostedFileBase_" data-uid="BLL.Falcon.I.ICallManager.AttachRecord(BLL.as_users,System.Int32,System.Web.HttpPostedFileBase)">AttachRecord(as_users, Int32, HttpPostedFileBase)</h4>
+  <div class="markdown level1 summary"><p>Сохранение записи разговора</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AttachRecord(as_users user, int callID, HttpPostedFileBase file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">callID</span></td>
+        <td><p>id звонкв</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Web.HttpPostedFileBase</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>файл</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_CheckIsCallAvailable_" data-uid="BLL.Falcon.I.ICallManager.CheckIsCallAvailable*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_CheckIsCallAvailable_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.ICallManager.CheckIsCallAvailable(BLL.as_users,System.String@)">CheckIsCallAvailable(as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Проверка - может ли пользователь совершить звонок</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CheckIsCallAvailable(as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_ClaimCall_" data-uid="BLL.Falcon.I.ICallManager.ClaimCall*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_ClaimCall_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.ICallManager.ClaimCall(BLL.as_users,System.Int32)">ClaimCall(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Установить ответственного для звонка</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ClaimCall(as_users user, int callID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">callID</span></td>
+        <td><p>id звонка</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_DownloadCallRecord_" data-uid="BLL.Falcon.I.ICallManager.DownloadCallRecord*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_DownloadCallRecord_System_Int32_" data-uid="BLL.Falcon.I.ICallManager.DownloadCallRecord(System.Int32)">DownloadCallRecord(Int32)</h4>
+  <div class="markdown level1 summary"><p>Скачивание записи звонка на сервер с VoxImplant</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; DownloadCallRecord(int callID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">callID</span></td>
+        <td><p>id звонка</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_EndFillBalanceFromRobokassa_" data-uid="BLL.Falcon.I.ICallManager.EndFillBalanceFromRobokassa*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_EndFillBalanceFromRobokassa_BLL_as_users_System_Decimal_System_Int32_System_String__" data-uid="BLL.Falcon.I.ICallManager.EndFillBalanceFromRobokassa(BLL.as_users,System.Decimal,System.Int32,System.String@)">EndFillBalanceFromRobokassa(as_users, Decimal, Int32, out String)</h4>
+  <div class="markdown level1 summary"><p>Завершает процесс пополнения телефонии через робокассу.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool EndFillBalanceFromRobokassa(as_users user, decimal amount, int paymentID, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Пользователь, пощадке которого адресован платеж</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>Размер платежа в рублях (Возвращает робокасса)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">paymentID</span></td>
+        <td><p>ID операции (finances)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetAccountDocuments_" data-uid="BLL.Falcon.I.ICallManager.GetAccountDocuments*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetAccountDocuments_BLL_as_users_" data-uid="BLL.Falcon.I.ICallManager.GetAccountDocuments(BLL.as_users)">GetAccountDocuments(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить выгруженные документы для подтверждения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;AccountVerificationDocument&gt; GetAccountDocuments(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.API.VoxImpant.Accounts.AccountVerificationDocument.html">AccountVerificationDocument</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetBalance_" data-uid="BLL.Falcon.I.ICallManager.GetBalance*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetBalance_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.ICallManager.GetBalance(BLL.as_users,System.String@)">GetBalance(as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Возвращает баланс телефонии</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TelephonyBalanceInfo GetBalance(as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Telephony.TelephonyBalanceInfo.html">TelephonyBalanceInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetCalls_" data-uid="BLL.Falcon.I.ICallManager.GetCalls*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetCalls_BLL_Models_Paginations_PaginationRule_BLL_as_users_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_String__" data-uid="BLL.Falcon.I.ICallManager.GetCalls(BLL.Models.Paginations.PaginationRule,BLL.as_users,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.String})">GetCalls(PaginationRule, as_users, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, List&lt;Int32&gt;, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Получить историю звонков</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PaginationResult&lt;CallModel&gt; GetCalls(PaginationRule pagination, as_users user, DateTime? filterDateFrom = default(DateTime? ), DateTime? filterDateTo = default(DateTime? ), List&lt;int&gt; responsibleUsers = null, List&lt;string&gt; groupsUsers = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationRule.html">PaginationRule</a></td>
+        <td><span class="parametername">pagination</span></td>
+        <td><p>пагинация</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="parametername">filterDateFrom</span></td>
+        <td><p>фильтр по дате с</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="parametername">filterDateTo</span></td>
+        <td><p>фильтр по дате по</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">responsibleUsers</span></td>
+        <td><p>фильтр по ответственным</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">groupsUsers</span></td>
+        <td><p>фильтр по группам пользователей</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationResult-1.html">PaginationResult</a>&lt;<a class="xref" href="BLL.Models.Calls.CallModel.html">CallModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetCallsHistory_" data-uid="BLL.Falcon.I.ICallManager.GetCallsHistory*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetCallsHistory_BLL_Models_Paginations_PaginationRule_System_Int32_System_Int32_System_Int32___" data-uid="BLL.Falcon.I.ICallManager.GetCallsHistory(BLL.Models.Paginations.PaginationRule,System.Int32,System.Int32,System.Int32[])">GetCallsHistory(PaginationRule, Int32, Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Получить историю звонков</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PaginationResult&lt;CallsHistoryModel&gt; GetCallsHistory(PaginationRule pagination, int userID = 0, int crmID = 0, int[] callIDs = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationRule.html">PaginationRule</a></td>
+        <td><span class="parametername">pagination</span></td>
+        <td><p>пагинация</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userID</span></td>
+        <td><p>фильтр по ответственным</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">crmID</span></td>
+        <td><p>фильтр по crm</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">callIDs</span></td>
+        <td><p>фильтр по звонкам</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationResult-1.html">PaginationResult</a>&lt;<a class="xref" href="BLL.Models.Telephony.CallsHistoryModel.html">CallsHistoryModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetNewPhones_" data-uid="BLL.Falcon.I.ICallManager.GetNewPhones*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetNewPhones_BLL_Models_Paginations_PaginationRule_System_String_System_Int32_System_Boolean_" data-uid="BLL.Falcon.I.ICallManager.GetNewPhones(BLL.Models.Paginations.PaginationRule,System.String,System.Int32,System.Boolean)">GetNewPhones(PaginationRule, String, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Возвращает список новых телефонов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PaginationResult&lt;PhoneModel&gt; GetNewPhones(PaginationRule pagination, string category = &quot;GEOGRAPHIC&quot;, int region = 1, bool isDebug = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationRule.html">PaginationRule</a></td>
+        <td><span class="parametername">pagination</span></td>
+        <td><p>пагинация</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>категория телефона</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>id региона</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDebug</span></td>
+        <td><p>отладочный режим</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationResult-1.html">PaginationResult</a>&lt;<a class="xref" href="BLL.Models.Telephony.PhoneModel.html">PhoneModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetPhoneNumberCategories_" data-uid="BLL.Falcon.I.ICallManager.GetPhoneNumberCategories*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetPhoneNumberCategories" data-uid="BLL.Falcon.I.ICallManager.GetPhoneNumberCategories">GetPhoneNumberCategories()</h4>
+  <div class="markdown level1 summary"><p>Получает категории номеров</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;PhoneNumberCategory&gt; GetPhoneNumberCategories()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.API.VoxImpant.Phones.PhoneNumberCategory.html">PhoneNumberCategory</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetPhoneNumberRegions_" data-uid="BLL.Falcon.I.ICallManager.GetPhoneNumberRegions*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetPhoneNumberRegions_System_String_" data-uid="BLL.Falcon.I.ICallManager.GetPhoneNumberRegions(System.String)">GetPhoneNumberRegions(String)</h4>
+  <div class="markdown level1 summary"><p>Получает регионы номеров</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;PhoneNumberRegion&gt; GetPhoneNumberRegions(string category = &quot;mobile&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>категория</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.API.VoxImpant.Phones.PhoneNumberRegion.html">PhoneNumberRegion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetPhones_" data-uid="BLL.Falcon.I.ICallManager.GetPhones*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetPhones_BLL_as_users_BLL_Models_Paginations_PaginationRule_" data-uid="BLL.Falcon.I.ICallManager.GetPhones(BLL.as_users,BLL.Models.Paginations.PaginationRule)">GetPhones(as_users, PaginationRule)</h4>
+  <div class="markdown level1 summary"><p>Получить арендованные номера телефонов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PaginationResult&lt;PhoneModel&gt; GetPhones(as_users user, PaginationRule pagination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationRule.html">PaginationRule</a></td>
+        <td><span class="parametername">pagination</span></td>
+        <td><p>паринация</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Paginations.PaginationResult-1.html">PaginationResult</a>&lt;<a class="xref" href="BLL.Models.Telephony.PhoneModel.html">PhoneModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetResponsiblePhoneForRedirecting_" data-uid="BLL.Falcon.I.ICallManager.GetResponsiblePhoneForRedirecting*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetResponsiblePhoneForRedirecting_System_Int32_System_String_" data-uid="BLL.Falcon.I.ICallManager.GetResponsiblePhoneForRedirecting(System.Int32,System.String)">GetResponsiblePhoneForRedirecting(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>По id аккаунта телефонии и номеру звонящего возвращает номер отвественного менеджера, или null если ничего не найдено</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetResponsiblePhoneForRedirecting(int accountID, string callNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">accountID</span></td>
+        <td><p>id аккаунта телефонии</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">callNumber</span></td>
+        <td><p>номер звонящего</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetResponsiblesForPhone_" data-uid="BLL.Falcon.I.ICallManager.GetResponsiblesForPhone*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetResponsiblesForPhone_System_String_System_Int32_" data-uid="BLL.Falcon.I.ICallManager.GetResponsiblesForPhone(System.String,System.Int32)">GetResponsiblesForPhone(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить id ответственных по телефону</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; GetResponsiblesForPhone(string phone, int crmID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phone</span></td>
+        <td><p>телефон</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">crmID</span></td>
+        <td><p>id crm</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_GetTotalBalance_" data-uid="BLL.Falcon.I.ICallManager.GetTotalBalance*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_GetTotalBalance_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.ICallManager.GetTotalBalance(BLL.as_users,System.String@)">GetTotalBalance(as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Баланс главного аккаунта VI (с которого переводят деньги)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TelephonyBalanceInfo GetTotalBalance(as_users user, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Telephony.TelephonyBalanceInfo.html">TelephonyBalanceInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_IsCallForManager_" data-uid="BLL.Falcon.I.ICallManager.IsCallForManager*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_IsCallForManager_System_String_BLL_as_users_System_String__" data-uid="BLL.Falcon.I.ICallManager.IsCallForManager(System.String,BLL.as_users,System.String@)">IsCallForManager(String, as_users, out String)</h4>
+  <div class="markdown level1 summary"><p>Проверка - должен ли у менеджера зазвонить телефон</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsCallForManager(string phone, as_users user, out string contactName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phone</span></td>
+        <td><p>телефон</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">contactName</span></td>
+        <td><p>Имя звонящего контакта</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_RentPhone_" data-uid="BLL.Falcon.I.ICallManager.RentPhone*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_RentPhone_BLL_as_users_System_String_System_String_System_Int32_System_String__System_Boolean_" data-uid="BLL.Falcon.I.ICallManager.RentPhone(BLL.as_users,System.String,System.String,System.Int32,System.String@,System.Boolean)">RentPhone(as_users, String, String, Int32, out String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Аренда номера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RentPhone(as_users user, string phone, string category, int region, out string errorCode, bool isDebug = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phone</span></td>
+        <td><p>номер телефона</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>категория</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">region</span></td>
+        <td><p>регион</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorCode</span></td>
+        <td><p>ошибка</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDebug</span></td>
+        <td><p>аренда тестового телефона?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_SetCallDealID_" data-uid="BLL.Falcon.I.ICallManager.SetCallDealID*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_SetCallDealID_System_Int64_System_Int32_" data-uid="BLL.Falcon.I.ICallManager.SetCallDealID(System.Int64,System.Int32)">SetCallDealID(Int64, Int32)</h4>
+  <div class="markdown level1 summary"><p>Устанавливает dealID для звонка (создание лога с информацией о звонке)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetCallDealID(long sessionID, int dealID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">sessionID</span></td>
+        <td><p>ID сессии</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dealID</span></td>
+        <td><p>ID сделки</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_SheduleCallDownload_" data-uid="BLL.Falcon.I.ICallManager.SheduleCallDownload*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_SheduleCallDownload_System_Int32_" data-uid="BLL.Falcon.I.ICallManager.SheduleCallDownload(System.Int32)">SheduleCallDownload(Int32)</h4>
+  <div class="markdown level1 summary"><p>Создает задачу в планировщике - скачать запись звонка</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SheduleCallDownload(int callID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">callID</span></td>
+        <td><p>id звонка</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_StartCall_" data-uid="BLL.Falcon.I.ICallManager.StartCall*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_StartCall_System_Int64_System_Int64_" data-uid="BLL.Falcon.I.ICallManager.StartCall(System.Int64,System.Int64)">StartCall(Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>Получить данные для звонка</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InitialCallData StartCall(long accountID, long sessionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">accountID</span></td>
+        <td><p>id аккаунта телефонии</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">sessionID</span></td>
+        <td><p>id сессии</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Calls.InitialCallData.html">InitialCallData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_StopCall_" data-uid="BLL.Falcon.I.ICallManager.StopCall*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_StopCall_System_Int64_System_Boolean_System_String_System_String_" data-uid="BLL.Falcon.I.ICallManager.StopCall(System.Int64,System.Boolean,System.String,System.String)">StopCall(Int64, Boolean, String, String)</h4>
+  <div class="markdown level1 summary"><p>Завершение звонка</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int StopCall(long sessionID, bool isIncoming, string callerPhone, string destinationPhone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">sessionID</span></td>
+        <td><p>id сессии</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isIncoming</span></td>
+        <td><p>входящий звонок?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">callerPhone</span></td>
+        <td><p>телефон звонившего</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">destinationPhone</span></td>
+        <td><p>телефон куда звонили</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_TransferMoneyToAccount_" data-uid="BLL.Falcon.I.ICallManager.TransferMoneyToAccount*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_TransferMoneyToAccount_BLL_as_users_System_Decimal_System_String__" data-uid="BLL.Falcon.I.ICallManager.TransferMoneyToAccount(BLL.as_users,System.Decimal,System.String@)">TransferMoneyToAccount(as_users, Decimal, out String)</h4>
+  <div class="markdown level1 summary"><p>Пополнение аккаунта телефонии</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TransferMoneyToAccount(as_users user, decimal amount, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Пользователь, пощадке которого адресован платеж</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>Размер платежа в рублях</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_VoxImplantChangeAccountLanguage_" data-uid="BLL.Falcon.I.ICallManager.VoxImplantChangeAccountLanguage*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_VoxImplantChangeAccountLanguage_System_Int32_System_Int32_" data-uid="BLL.Falcon.I.ICallManager.VoxImplantChangeAccountLanguage(System.Int32,System.Int32)">VoxImplantChangeAccountLanguage(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void VoxImplantChangeAccountLanguage(int page = 1, int pageSize = 10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">page</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_ICallManager_VoxImplantMigration_" data-uid="BLL.Falcon.I.ICallManager.VoxImplantMigration*"></a>
+  <h4 id="BLL_Falcon_I_ICallManager_VoxImplantMigration_System_Int32_System_Int32_" data-uid="BLL.Falcon.I.ICallManager.VoxImplantMigration(System.Int32,System.Int32)">VoxImplantMigration(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void VoxImplantMigration(int page = 1, int pageSize = 10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">page</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

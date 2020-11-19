@@ -1,0 +1,1730 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IChatManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IChatManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.IChatManager">
+  
+  
+  <h1 id="BLL_Falcon_I_IChatManager" data-uid="BLL.Falcon.I.IChatManager" class="text-break">Interface IChatManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_IChatManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IChatManager : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_CanModifyChat_" data-uid="BLL.Falcon.I.IChatManager.CanModifyChat*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_CanModifyChat_BLL_aib_chats_BLL_aib_deals_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.CanModifyChat(BLL.aib_chats,BLL.aib_deals,BLL.as_users)">CanModifyChat(aib_chats, aib_deals, as_users)</h4>
+  <div class="markdown level1 summary"><p>Может ли пользователь изменить/удалить чат</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanModifyChat(aib_chats chat, aib_deals deal, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_chats.html">aib_chats</a></td>
+        <td><span class="parametername">chat</span></td>
+        <td><p>модель чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.aib_deals.html">aib_deals</a></td>
+        <td><span class="parametername">deal</span></td>
+        <td><p>модель сделки</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_CanModifyChat_" data-uid="BLL.Falcon.I.IChatManager.CanModifyChat*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_CanModifyChat_BLL_aib_chats_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.CanModifyChat(BLL.aib_chats,BLL.as_users)">CanModifyChat(aib_chats, as_users)</h4>
+  <div class="markdown level1 summary"><p>Может ли пользователь изменить/удалить чат</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanModifyChat(aib_chats chat, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.aib_chats.html">aib_chats</a></td>
+        <td><span class="parametername">chat</span></td>
+        <td><p>модель чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_CanReadChat_" data-uid="BLL.Falcon.I.IChatManager.CanReadChat*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_CanReadChat_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.CanReadChat(System.Int32,BLL.as_users)">CanReadChat(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Может ли пользователь писать/читать сообщения чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanReadChat(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_ChangeChatSettings_" data-uid="BLL.Falcon.I.IChatManager.ChangeChatSettings*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_ChangeChatSettings_System_Int32_BLL_Models_Chats_ChatSettingsModel_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.ChangeChatSettings(System.Int32,BLL.Models.Chats.ChatSettingsModel,BLL.as_users)">ChangeChatSettings(Int32, ChatSettingsModel, as_users)</h4>
+  <div class="markdown level1 summary"><p>Изменить настройки чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeChatSettings(int id, ChatSettingsModel model, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatSettingsModel.html">ChatSettingsModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>модель настроек</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_ChangeChatSubscription_" data-uid="BLL.Falcon.I.IChatManager.ChangeChatSubscription*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_ChangeChatSubscription_System_Int32_System_Boolean_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.ChangeChatSubscription(System.Int32,System.Boolean,BLL.as_users)">ChangeChatSubscription(Int32, Boolean, as_users)</h4>
+  <div class="markdown level1 summary"><p>Подписаться/отписаться на уведомления чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ChangeChatSubscription(int id, bool state, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>true - получать ведомления</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_CreateChat_" data-uid="BLL.Falcon.I.IChatManager.CreateChat*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_CreateChat_System_String_System_Int32_System_Collections_Generic_ICollection_System_Int32__BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.CreateChat(System.String,System.Int32,System.Collections.Generic.ICollection{System.Int32},BLL.as_users)">CreateChat(String, Int32, ICollection&lt;Int32&gt;, as_users)</h4>
+  <div class="markdown level1 summary"><p>Создает чат. Возвращает ID нового чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int CreateChat(string name, int dealID, ICollection&lt;int&gt; userIDs, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Название чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dealID</span></td>
+        <td><p>id сделки</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userIDs</span></td>
+        <td><p>id участников чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_DeleteChat_" data-uid="BLL.Falcon.I.IChatManager.DeleteChat*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_DeleteChat_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.DeleteChat(System.Int32,BLL.as_users)">DeleteChat(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удаляет чат</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteChat(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_DeleteChatFile_" data-uid="BLL.Falcon.I.IChatManager.DeleteChatFile*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_DeleteChatFile_System_Int32_System_Int32_" data-uid="BLL.Falcon.I.IChatManager.DeleteChatFile(System.Int32,System.Int32)">DeleteChatFile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет файл из чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteChatFile(int messageID, int fileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">messageID</span></td>
+        <td><p>id сообщения</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fileID</span></td>
+        <td><p>id файла (resource)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_DeleteMessage_" data-uid="BLL.Falcon.I.IChatManager.DeleteMessage*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_DeleteMessage_System_Int32_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.DeleteMessage(System.Int32,System.Int32,BLL.as_users)">DeleteMessage(Int32, Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удаление сообщения из чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteMessage(int id, int chatID, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id сообщения</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_EditMessage_" data-uid="BLL.Falcon.I.IChatManager.EditMessage*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_EditMessage_System_Int32_System_Int32_BLL_Models_Chats_ChatMessageContent_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.EditMessage(System.Int32,System.Int32,BLL.Models.Chats.ChatMessageContent,BLL.as_users)">EditMessage(Int32, Int32, ChatMessageContent, as_users)</h4>
+  <div class="markdown level1 summary"><p>Редактирование сообщения в чате</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool EditMessage(int id, int chatID, ChatMessageContent message, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id сообщения</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatMessageContent.html">ChatMessageContent</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>модель сообщения</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetChatActiveUsers_" data-uid="BLL.Falcon.I.IChatManager.GetChatActiveUsers*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetChatActiveUsers_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetChatActiveUsers(System.Int32,BLL.as_users)">GetChatActiveUsers(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Список активных пользователей чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; GetChatActiveUsers(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetChatInactiveUsers_" data-uid="BLL.Falcon.I.IChatManager.GetChatInactiveUsers*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetChatInactiveUsers_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetChatInactiveUsers(System.Int32,BLL.as_users)">GetChatInactiveUsers(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Список НЕ активных пользователей чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; GetChatInactiveUsers(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetChatMembers_" data-uid="BLL.Falcon.I.IChatManager.GetChatMembers*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetChatMembers_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetChatMembers(System.Int32,BLL.as_users)">GetChatMembers(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает участников чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChatMembersModel GetChatMembers(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatMembersModel.html">ChatMembersModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetChatSubscribedUsers_" data-uid="BLL.Falcon.I.IChatManager.GetChatSubscribedUsers*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetChatSubscribedUsers_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetChatSubscribedUsers(System.Int32,BLL.as_users)">GetChatSubscribedUsers(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Список пользователей, подписанных на уведомления чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; GetChatSubscribedUsers(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetChatSubsribedInactiveUsers_" data-uid="BLL.Falcon.I.IChatManager.GetChatSubsribedInactiveUsers*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetChatSubsribedInactiveUsers_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetChatSubsribedInactiveUsers(System.Int32,BLL.as_users)">GetChatSubsribedInactiveUsers(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Список НЕ активных пользователей, подписанных на уведомления чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; GetChatSubsribedInactiveUsers(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetDealChats_" data-uid="BLL.Falcon.I.IChatManager.GetDealChats*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetDealChats_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetDealChats(System.Int32,BLL.as_users)">GetDealChats(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает список чатов сделки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;ChatViewModel&gt; GetDealChats(int dealID, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dealID</span></td>
+        <td><p>id сделки</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Chats.ChatViewModel.html">ChatViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetMessages_" data-uid="BLL.Falcon.I.IChatManager.GetMessages*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetMessages_System_Int32_BLL_as_users_System_Int32_System_Int32_System_String_" data-uid="BLL.Falcon.I.IChatManager.GetMessages(System.Int32,BLL.as_users,System.Int32,System.Int32,System.String)">GetMessages(Int32, as_users, Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Возвращает сообщения чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;ChatMessageViewModel&gt; GetMessages(int chatID, as_users user, int skip = 0, int take = 20, string search = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>не загружать первые skip сообщений</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">take</span></td>
+        <td><p>загрузить take сообщений</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>строка поиска</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Chats.ChatMessageViewModel.html">ChatMessageViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetReaderChats_" data-uid="BLL.Falcon.I.IChatManager.GetReaderChats*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetReaderChats_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetReaderChats(BLL.as_users)">GetReaderChats(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить чаты для runSales (правая панель)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;ReaderChatModel&gt; GetReaderChats(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Chats.ReaderChatModel.html">ReaderChatModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetUserChats_" data-uid="BLL.Falcon.I.IChatManager.GetUserChats*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetUserChats_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.GetUserChats(BLL.as_users)">GetUserChats(as_users)</h4>
+  <div class="markdown level1 summary"><p>Возвращает список чатов, в которых состоит пользователь</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;int&gt; GetUserChats(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_GetUsersForChats_" data-uid="BLL.Falcon.I.IChatManager.GetUsersForChats*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_GetUsersForChats_BLL_as_users_System_Boolean_System_Nullable_System_Int32__" data-uid="BLL.Falcon.I.IChatManager.GetUsersForChats(BLL.as_users,System.Boolean,System.Nullable{System.Int32})">GetUsersForChats(as_users, Boolean, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Возвращает всех пользователей для вывода в чатах</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;ChatUserModel&gt; GetUsersForChats(as_users user, bool placeholderIfNoPhotoLoaded = true, int? dealID = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">placeholderIfNoPhotoLoaded</span></td>
+        <td><p>устанавливать заглушку если у пользователя нет фото</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">dealID</span></td>
+        <td><p>текущая сделка</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.Chats.ChatUserModel.html">ChatUserModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_HasUserNewMessages_" data-uid="BLL.Falcon.I.IChatManager.HasUserNewMessages*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_HasUserNewMessages_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.HasUserNewMessages(BLL.as_users)">HasUserNewMessages(as_users)</h4>
+  <div class="markdown level1 summary"><p>Проверка - есть ли у пользователя непрочитанные сообщения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasUserNewMessages(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_JoinChat_" data-uid="BLL.Falcon.I.IChatManager.JoinChat*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_JoinChat_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.JoinChat(System.Int32,BLL.as_users)">JoinChat(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Сделать пользователя участником чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool JoinChat(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_LeaveChat_" data-uid="BLL.Falcon.I.IChatManager.LeaveChat*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_LeaveChat_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.LeaveChat(System.Int32,BLL.as_users)">LeaveChat(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Удалить пользователя из участников чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool LeaveChat(int id, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_SendAddChatMembersNotify_" data-uid="BLL.Falcon.I.IChatManager.SendAddChatMembersNotify*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_SendAddChatMembersNotify_System_Int32_System_Collections_Generic_ICollection_System_Int32__BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.SendAddChatMembersNotify(System.Int32,System.Collections.Generic.ICollection{System.Int32},BLL.as_users)">SendAddChatMembersNotify(Int32, ICollection&lt;Int32&gt;, as_users)</h4>
+  <div class="markdown level1 summary"><p>Добавить уведомление, что в чат были добавлены участники</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChatMessageViewModel SendAddChatMembersNotify(int chatID, ICollection&lt;int&gt; userIDs, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userIDs</span></td>
+        <td><p>id добавленных участников чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatMessageViewModel.html">ChatMessageViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_SendMessage_" data-uid="BLL.Falcon.I.IChatManager.SendMessage*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_SendMessage_System_Int32_BLL_Models_Chats_ChatMessageContent_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.SendMessage(System.Int32,BLL.Models.Chats.ChatMessageContent,BLL.as_users)">SendMessage(Int32, ChatMessageContent, as_users)</h4>
+  <div class="markdown level1 summary"><p>Отправка сообщения в чат</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChatMessageViewModel SendMessage(int chatID, ChatMessageContent message, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatMessageContent.html">ChatMessageContent</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>модель сообщения</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatMessageViewModel.html">ChatMessageViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_SendRemoveChatMembersNotify_" data-uid="BLL.Falcon.I.IChatManager.SendRemoveChatMembersNotify*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_SendRemoveChatMembersNotify_System_Int32_System_Collections_Generic_ICollection_System_Int32__BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.SendRemoveChatMembersNotify(System.Int32,System.Collections.Generic.ICollection{System.Int32},BLL.as_users)">SendRemoveChatMembersNotify(Int32, ICollection&lt;Int32&gt;, as_users)</h4>
+  <div class="markdown level1 summary"><p>Добавить уведомление, что из чата были удалены участники</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChatMessageViewModel SendRemoveChatMembersNotify(int chatID, ICollection&lt;int&gt; userIDs, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userIDs</span></td>
+        <td><p>id удаленных участников чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatMessageViewModel.html">ChatMessageViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_SendRenameChatNotify_" data-uid="BLL.Falcon.I.IChatManager.SendRenameChatNotify*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_SendRenameChatNotify_System_Int32_System_String_System_String_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.SendRenameChatNotify(System.Int32,System.String,System.String,BLL.as_users)">SendRenameChatNotify(Int32, String, String, as_users)</h4>
+  <div class="markdown level1 summary"><p>Добавить уведомление, что чат был переименован</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChatMessageViewModel SendRenameChatNotify(int chatID, string oldName, string newName, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">oldName</span></td>
+        <td><p>старое название чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>новое название чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.Chats.ChatMessageViewModel.html">ChatMessageViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_ToggleChatMembers_" data-uid="BLL.Falcon.I.IChatManager.ToggleChatMembers*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_ToggleChatMembers_System_Int32_System_Int32_System_Boolean_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.ToggleChatMembers(System.Int32,System.Int32,System.Boolean,BLL.as_users)">ToggleChatMembers(Int32, Int32, Boolean, as_users)</h4>
+  <div class="markdown level1 summary"><p>Включает или исключает пользователя из чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ToggleChatMembers(int chatID, int userID, bool state, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userID</span></td>
+        <td><p>id пользователя, над которым производятся манипуляции</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>true - включить / false - исключить</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_UpdateChatLastRead_" data-uid="BLL.Falcon.I.IChatManager.UpdateChatLastRead*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_UpdateChatLastRead_System_Int32_BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.UpdateChatLastRead(System.Int32,BLL.as_users)">UpdateChatLastRead(Int32, as_users)</h4>
+  <div class="markdown level1 summary"><p>Обновление даты последнего чтения чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateChatLastRead(int chatID, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">chatID</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IChatManager_UpdateChatMembers_" data-uid="BLL.Falcon.I.IChatManager.UpdateChatMembers*"></a>
+  <h4 id="BLL_Falcon_I_IChatManager_UpdateChatMembers_System_Int32_System_Collections_Generic_ICollection_System_Int32__BLL_as_users_" data-uid="BLL.Falcon.I.IChatManager.UpdateChatMembers(System.Int32,System.Collections.Generic.ICollection{System.Int32},BLL.as_users)">UpdateChatMembers(Int32, ICollection&lt;Int32&gt;, as_users)</h4>
+  <div class="markdown level1 summary"><p>Изменить набор участников чата</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UpdateChatMembers(int id, ICollection&lt;int&gt; userIDs, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userIDs</span></td>
+        <td><p>id участников чата</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

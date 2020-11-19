@@ -1,0 +1,1189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFbApiManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFbApiManager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BLL.Falcon.I.IFbApiManager">
+  
+  
+  <h1 id="BLL_Falcon_I_IFbApiManager" data-uid="BLL.Falcon.I.IFbApiManager" class="text-break">Interface IFbApiManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BLL.Falcon.I.html">BLL.Falcon.I</a></h6>
+  <h6><strong>Assembly</strong>: BLL.dll</h6>
+  <h5 id="BLL_Falcon_I_IFbApiManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFbApiManager : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_AddContact_" data-uid="BLL.Falcon.I.IFbApiManager.AddContact*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_AddContact_BLL_as_users_BLL_Models_FbApi_FbContactModel_" data-uid="BLL.Falcon.I.IFbApiManager.AddContact(BLL.as_users,BLL.Models.FbApi.FbContactModel)">AddContact(as_users, FbContactModel)</h4>
+  <div class="markdown level1 summary"><p>Добавить связь между пользователем FB и контактом в системе</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddContact(as_users user, FbContactModel contactModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbContactModel.html">FbContactModel</a></td>
+        <td><span class="parametername">contactModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_AddSetting_" data-uid="BLL.Falcon.I.IFbApiManager.AddSetting*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_AddSetting_BLL_as_users_BLL_Models_FbApi_FbApiSettingsModel_System_String__" data-uid="BLL.Falcon.I.IFbApiManager.AddSetting(BLL.as_users,BLL.Models.FbApi.FbApiSettingsModel,System.String@)">AddSetting(as_users, FbApiSettingsModel, out String)</h4>
+  <div class="markdown level1 summary"><p>Добавить настройки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddSetting(as_users user, FbApiSettingsModel settingsModel, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbApiSettingsModel.html">FbApiSettingsModel</a></td>
+        <td><span class="parametername">settingsModel</span></td>
+        <td><p>модель настроек</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>собщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_CreateOrUpdateDeal_" data-uid="BLL.Falcon.I.IFbApiManager.CreateOrUpdateDeal*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_CreateOrUpdateDeal_BLL_as_users_System_Int32_BLL_Models_FbApi_FbMessageSimpleModel_System_String__System_Int32_System_Int32_" data-uid="BLL.Falcon.I.IFbApiManager.CreateOrUpdateDeal(BLL.as_users,System.Int32,BLL.Models.FbApi.FbMessageSimpleModel,System.String@,System.Int32,System.Int32)">CreateOrUpdateDeal(as_users, Int32, FbMessageSimpleModel, out String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Создать новую сделку из сообщения от бота FB или добавить лог в существующую сделку</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CreateOrUpdateDeal(as_users user, int contactID, FbMessageSimpleModel fbMessage, out string msg, int funnelID = 0, int responsibleUserID = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">contactID</span></td>
+        <td><p>контакт в системе</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbMessageSimpleModel.html">FbMessageSimpleModel</a></td>
+        <td><span class="parametername">fbMessage</span></td>
+        <td><p>входящее сообщение</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">funnelID</span></td>
+        <td><p>воронка для новой сделки</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">responsibleUserID</span></td>
+        <td><p>ответственный для новой сделки</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_DeleteSetting_" data-uid="BLL.Falcon.I.IFbApiManager.DeleteSetting*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_DeleteSetting_BLL_as_users_System_Int32_" data-uid="BLL.Falcon.I.IFbApiManager.DeleteSetting(BLL.as_users,System.Int32)">DeleteSetting(as_users, Int32)</h4>
+  <div class="markdown level1 summary"><p>Удалить настройки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteSetting(as_users user, int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_EditContact_" data-uid="BLL.Falcon.I.IFbApiManager.EditContact*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_EditContact_BLL_as_users_BLL_Models_FbApi_FbContactModel_" data-uid="BLL.Falcon.I.IFbApiManager.EditContact(BLL.as_users,BLL.Models.FbApi.FbContactModel)">EditContact(as_users, FbContactModel)</h4>
+  <div class="markdown level1 summary"><p>Изменить связь пользователя FB и контакта из системы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool EditContact(as_users user, FbContactModel contactModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbContactModel.html">FbContactModel</a></td>
+        <td><span class="parametername">contactModel</span></td>
+        <td><p>модель</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_EditFbApiSettingsInline_" data-uid="BLL.Falcon.I.IFbApiManager.EditFbApiSettingsInline*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_EditFbApiSettingsInline_BLL_as_users_System_Int32_System_String_System_String_System_String__" data-uid="BLL.Falcon.I.IFbApiManager.EditFbApiSettingsInline(BLL.as_users,System.Int32,System.String,System.String,System.String@)">EditFbApiSettingsInline(as_users, Int32, String, String, out String)</h4>
+  <div class="markdown level1 summary"><p>Изменить настройки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool EditFbApiSettingsInline(as_users user, int pk, string name, string value, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pk</span></td>
+        <td><p>id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>поле</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>значение</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_GetContact_" data-uid="BLL.Falcon.I.IFbApiManager.GetContact*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_GetContact_BLL_as_users_System_Int64_System_Int32_System_Int32_" data-uid="BLL.Falcon.I.IFbApiManager.GetContact(BLL.as_users,System.Int64,System.Int32,System.Int32)">GetContact(as_users, Int64, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Получить связь пользователя FB и контакта из системы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FbContactModel GetContact(as_users user, long fbContactID = 0L, int contactID = 0, int id = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">fbContactID</span></td>
+        <td><p>пользователь FB</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">contactID</span></td>
+        <td><p>контакт из систмеы</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>id связи</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbContactModel.html">FbContactModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_GetCrmIDByGroupID_" data-uid="BLL.Falcon.I.IFbApiManager.GetCrmIDByGroupID*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_GetCrmIDByGroupID_System_Int64_" data-uid="BLL.Falcon.I.IFbApiManager.GetCrmIDByGroupID(System.Int64)">GetCrmIDByGroupID(Int64)</h4>
+  <div class="markdown level1 summary"><p>Получить crm по id бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCrmIDByGroupID(long pageID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">pageID</span></td>
+        <td><p>бот</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_GetMessage_" data-uid="BLL.Falcon.I.IFbApiManager.GetMessage*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_GetMessage_BLL_Models_FbApi_FbMessageModel_" data-uid="BLL.Falcon.I.IFbApiManager.GetMessage(BLL.Models.FbApi.FbMessageModel)">GetMessage(FbMessageModel)</h4>
+  <div class="markdown level1 summary"><p>Получить модель сообщения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FbMessageSimpleModel GetMessage(FbMessageModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbMessageModel.html">FbMessageModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>модель из вебхука</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbMessageSimpleModel.html">FbMessageSimpleModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_GetSettings_" data-uid="BLL.Falcon.I.IFbApiManager.GetSettings*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_GetSettings_BLL_as_users_" data-uid="BLL.Falcon.I.IFbApiManager.GetSettings(BLL.as_users)">GetSettings(as_users)</h4>
+  <div class="markdown level1 summary"><p>Получить настройки ботов FB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;aib_crm_fbApi_settings&gt; GetSettings(as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.aib_crm_fbApi_settings.html">aib_crm_fbApi_settings</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_GetSettings_" data-uid="BLL.Falcon.I.IFbApiManager.GetSettings*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_GetSettings_BLL_as_users_System_Int64_" data-uid="BLL.Falcon.I.IFbApiManager.GetSettings(BLL.as_users,System.Int64)">GetSettings(as_users, Int64)</h4>
+  <div class="markdown level1 summary"><p>Получить настройки для бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FbApiSettingsModel GetSettings(as_users user, long pageID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">pageID</span></td>
+        <td><p>id бота</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbApiSettingsModel.html">FbApiSettingsModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_GetUser_" data-uid="BLL.Falcon.I.IFbApiManager.GetUser*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_GetUser_BLL_as_users_System_Int64_System_String_System_Int64_" data-uid="BLL.Falcon.I.IFbApiManager.GetUser(BLL.as_users,System.Int64,System.String,System.Int64)">GetUser(as_users, Int64, String, Int64)</h4>
+  <div class="markdown level1 summary"><p>Получить контакт связанный с аккаунтом FB или создать новый</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FbUserModel GetUser(as_users user, long userID, string accessToken, long pageID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">userID</span></td>
+        <td><p>пользователь FB</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td><p>токен</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">pageID</span></td>
+        <td><p>страница FB</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.Models.FbApi.FbUserModel.html">FbUserModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_GetUserIDbyPageID_" data-uid="BLL.Falcon.I.IFbApiManager.GetUserIDbyPageID*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_GetUserIDbyPageID_System_Int64_" data-uid="BLL.Falcon.I.IFbApiManager.GetUserIDbyPageID(System.Int64)">GetUserIDbyPageID(Int64)</h4>
+  <div class="markdown level1 summary"><p>Получить ответственного по id бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetUserIDbyPageID(long pageID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">pageID</span></td>
+        <td><p>бот</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_IsUserInContacts_" data-uid="BLL.Falcon.I.IFbApiManager.IsUserInContacts*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_IsUserInContacts_BLL_as_users_System_Int64_" data-uid="BLL.Falcon.I.IFbApiManager.IsUserInContacts(BLL.as_users,System.Int64)">IsUserInContacts(as_users, Int64)</h4>
+  <div class="markdown level1 summary"><p>Проверка - есть ли этот пользователь FB в системе</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsUserInContacts(as_users user, long fbUserID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">fbUserID</span></td>
+        <td><p>id пользователя FB</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_IsVerifyTokenExist_" data-uid="BLL.Falcon.I.IFbApiManager.IsVerifyTokenExist*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_IsVerifyTokenExist_System_String_" data-uid="BLL.Falcon.I.IFbApiManager.IsVerifyTokenExist(System.String)">IsVerifyTokenExist(String)</h4>
+  <div class="markdown level1 summary"><p>Есть ли такой токен в системе?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsVerifyTokenExist(string verifyToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">verifyToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_SaveContact_" data-uid="BLL.Falcon.I.IFbApiManager.SaveContact*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_SaveContact_System_Int32_System_String_BLL_as_users_" data-uid="BLL.Falcon.I.IFbApiManager.SaveContact(System.Int32,System.String,BLL.as_users)">SaveContact(Int32, String, as_users)</h4>
+  <div class="markdown level1 summary"><p>Сохраняет ссылку на FB для контакта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SaveContact(int contactID, string link, as_users user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">contactID</span></td>
+        <td><p>id контакта</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">link</span></td>
+        <td><p>ссылка</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>пользователь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_SendFiles_" data-uid="BLL.Falcon.I.IFbApiManager.SendFiles*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_SendFiles_BLL_as_users_System_Int64_System_String_System_Collections_Generic_List_System_String__" data-uid="BLL.Falcon.I.IFbApiManager.SendFiles(BLL.as_users,System.Int64,System.String,System.Collections.Generic.List{System.String})">SendFiles(as_users, Int64, String, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Отправить сообщение с файлами</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendFiles(as_users user, long recipientID, string accessToken, List&lt;string&gt; filePaths)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">recipientID</span></td>
+        <td><p>получатель</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td><p>токен</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">filePaths</span></td>
+        <td><p>файлы</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_SendFromList_" data-uid="BLL.Falcon.I.IFbApiManager.SendFromList*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_SendFromList_BLL_as_users_System_Collections_Generic_List_BLL_Models_FbApi_SendFb__" data-uid="BLL.Falcon.I.IFbApiManager.SendFromList(BLL.as_users,System.Collections.Generic.List{BLL.Models.FbApi.SendFb})">SendFromList(as_users, List&lt;SendFb&gt;)</h4>
+  <div class="markdown level1 summary"><p>Отправить несколько сообщений</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendFromList(as_users user, List&lt;SendFb&gt; messages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BLL.Models.FbApi.SendFb.html">SendFb</a>&gt;</td>
+        <td><span class="parametername">messages</span></td>
+        <td><p>сообщения</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_SendMessage_" data-uid="BLL.Falcon.I.IFbApiManager.SendMessage*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_SendMessage_BLL_as_users_System_Int64_System_String_System_String_System_Collections_Generic_List_System_String__" data-uid="BLL.Falcon.I.IFbApiManager.SendMessage(BLL.as_users,System.Int64,System.String,System.String,System.Collections.Generic.List{System.String})">SendMessage(as_users, Int64, String, String, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Отправка сообщения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendMessage(as_users user, long recipientID, string accessToken, string text = null, List&lt;string&gt; filePaths = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">recipientID</span></td>
+        <td><p>получатель</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td><p>токен доступа</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>текст</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">filePaths</span></td>
+        <td><p>рессурсы</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_SetupLinks_" data-uid="BLL.Falcon.I.IFbApiManager.SetupLinks*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_SetupLinks_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="BLL.Falcon.I.IFbApiManager.SetupLinks(System.Collections.Generic.Dictionary{System.String,System.String})">SetupLinks(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Инициализация менеджера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetupLinks(Dictionary&lt;string, string&gt; methods = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">methods</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BLL_Falcon_I_IFbApiManager_Upload_" data-uid="BLL.Falcon.I.IFbApiManager.Upload*"></a>
+  <h4 id="BLL_Falcon_I_IFbApiManager_Upload_BLL_as_users_System_Int64_System_String_System_String_System_String__" data-uid="BLL.Falcon.I.IFbApiManager.Upload(BLL.as_users,System.Int64,System.String,System.String,System.String@)">Upload(as_users, Int64, String, String, out String)</h4>
+  <div class="markdown level1 summary"><p>Загрузка фалйа в FB для прикрепления к сообщению</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Upload(as_users user, long userID, string accessToken, string filePath, out string msg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BLL.as_users.html">as_users</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">userID</span></td>
+        <td><p>пользователь FB</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td><p>токен</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>файл</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">msg</span></td>
+        <td><p>сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
